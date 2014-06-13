@@ -2,12 +2,14 @@ package com.smartapps.Localization2;
 
 import android.app.Activity;
 import android.content.IntentFilter;
+import android.graphics.*;
 import android.net.wifi.ScanResult;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+import android.widget.*;
 
+
+//import org.apache.commons.math3.stat.descriptive;
 import java.util.*;
 
 
@@ -47,6 +49,18 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private Timer t;
     private TimerTask task;
 
+
+
+    Button btnInitial, btnSenseNewAP, btnSenseNewScan;
+    Canvas canvas;
+    Bitmap mutableBitmap;
+
+    /**
+     * Cell Position Points
+     */
+    float cellspoints[][] ={{100,595},{100,510},{100,430},{100,380},{240,600},{240,510},{240,440},{240,385},{240,350},{245,280},{240,210},{240,140},{240,80},{240,15},{400,460},{400,143},{400,115}};
+
+
     private RssiDataSource datasource;
 
     private static Map<String, HashMap<Integer, Float>> cell1;
@@ -70,13 +84,15 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private static ArrayList<RFClass> test;
 
     private static final int NR_CELLS = 17;
-
+    //bayesian main variables
+    float [] posterior;
+    float[] prior;
 
     private Button btnCollect1,btnCollect2,btnCollect3,btnCollect4,btnCollect5,btnCollect6,btnCollect7,btnCollect8,btnCollect9,btnCollect10,btnCollect11,btnCollect12,btnCollect13,btnCollect14,btnCollect15,btnCollect16,btnCollect17,btnSave;
     private boolean btn1Used, btn2Used, btn3Used, btn4Used, btn5Used, btn6Used, btn7Used, btn8Used, btn9Used, btn10Used, btn11Used,btn12Used, btn13Used, btn14Used, btn15Used, btn16Used, btn17Used;
     private TextView txtviewwifi;
     private List<ScanResult> wifiList;
-    //private ArrayList<RFData> dataC1, dataC2, dataC3, dataC4, dataC5, dataC6, dataC7, dataC8, dataC9, dataC10, dataC11, dataC12, dataC13, dataC14,dataC15, dataC16, dataC17, fingerprintingData;
+    private ArrayList<RFClass> rfTestData;
 
     //private enum ButtonClicked{
     //    btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn10, btn11, btn12, btn13, btn14, btn15, btn16, btn17
@@ -89,111 +105,150 @@ public class MainActivity extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        //DATA
+        //Initializations (data and bayesian algorithm's variables)
+        posterior = new float [NR_CELLS];
+        //prior =  initiatePrior();
 
         this.datasource = new RssiDataSource(this);
         this.datasource.open();
         this.cell1 = datasource.getTrainingDataC1();
+        this.datasource.close();
+        this.datasource.open();
         this.cell2 = datasource.getTrainingDataC2();
+        this.datasource.close();
+        this.datasource.open();
         this.cell3 = datasource.getTrainingDataC3();
+        this.datasource.close();
+        this.datasource.open();
         this.cell4 = datasource.getTrainingDataC4();
+        this.datasource.close();
+        this.datasource.open();
         this.cell5 = datasource.getTrainingDataC5();
+        this.datasource.close();
+        this.datasource.open();
         this.cell6 = datasource.getTrainingDataC6();
+        this.datasource.close();
+        this.datasource.open();
         this.cell7 = datasource.getTrainingDataC7();
+        this.datasource.close();
+        this.datasource.open();
         this.cell8 = datasource.getTrainingDataC8();
+        this.datasource.close();
+        this.datasource.open();
         this.cell9 = datasource.getTrainingDataC9();
+        this.datasource.close();
+        this.datasource.open();
         this.cell10 = datasource.getTrainingDataC10();
+        this.datasource.close();
+        this.datasource.open();
         this.cell11 = datasource.getTrainingDataC11();
+        this.datasource.close();
+        this.datasource.open();
         this.cell12 = datasource.getTrainingDataC12();
+        this.datasource.close();
+        this.datasource.open();
         this.cell13 = datasource.getTrainingDataC13();
+        this.datasource.close();
+        this.datasource.open();
         this.cell14 = datasource.getTrainingDataC14();
+        this.datasource.close();
+        this.datasource.open();
         this.cell15 = datasource.getTrainingDataC15();
+        this.datasource.close();
+        this.datasource.open();
         this.cell16 = datasource.getTrainingDataC16();
+        this.datasource.close();
+        this.datasource.open();
         this.cell17 = datasource.getTrainingDataC17();
         this.datasource.close();
 
 
 
-        /************************************************************************
-         ************************** START Bayesian  ******************************
-         *************************************************************************/
-        //main variables
-        float [] posterior = new float [NR_CELLS];
-        float[] prior =  initiatePrior();
+        /*  Print data
+        Iterator entries = cell1.entrySet().iterator();
+        while (entries.hasNext()) {
+            Map.Entry thisEntry = (Map.Entry) entries.next();
+            String key = (String)thisEntry.getKey();
+            HashMap<Integer, Float> value = (HashMap<Integer, Float>)thisEntry.getValue();
+            Iterator rssEntries = value.entrySet().iterator();
+            System.out.println("Cell 1 - Mac ID " + key);
+            while (rssEntries.hasNext()){
+                HashMap.Entry leEntry = (HashMap.Entry) rssEntries.next();
+                Object key2 = leEntry.getKey();
+                Object value2 = leEntry.getValue();
+                System.out.println("           Rssi "+ key2 + " PROBABILITY " + value2);
+            }
+        }*/
 
 
-        for(int i = 0; i < test.size(); i++){
-            RFClass testPoint1 = test.get(i);
-            float [] tempProb = getProb(testPoint1.getId(), testPoint1.getRss());
-            posterior = multProbAndPriorAndNormalize(tempProb, prior);
-            //Update prior
-            prior = posterior;
-        }
 
         //BUTTONS
 //
-//        btnCollect1 = (Button) findViewById(R.id.btnScanC1);
-//        btnCollect2 = (Button) findViewById(R.id.btnScanC2);
-//        btnCollect3 = (Button) findViewById(R.id.btnScanC3);
-//        btnCollect4 = (Button) findViewById(R.id.btnScanC4);
-//        btnCollect5 = (Button) findViewById(R.id.btnScanC5);
-//        btnCollect6 = (Button) findViewById(R.id.btnScanC6);
-//        btnCollect7 = (Button) findViewById(R.id.btnScanC7);
-//        btnCollect8 = (Button) findViewById(R.id.btnScanC8);
-//        btnCollect9 = (Button) findViewById(R.id.btnScanC9);
-//        btnCollect10 = (Button) findViewById(R.id.btnScanC10);
-//        btnCollect11 = (Button) findViewById(R.id.btnScanC11);
-//        btnCollect12 = (Button) findViewById(R.id.btnScanC12);
-//        btnCollect13 = (Button) findViewById(R.id.btnScanC13);
-//        btnCollect14 = (Button) findViewById(R.id.btnScanC14);
-//        btnCollect15 = (Button) findViewById(R.id.btnScanC15);
-//        btnCollect16 = (Button) findViewById(R.id.btnScanC16);
-//        btnCollect17 = (Button) findViewById(R.id.btnScanC17);
-//        btnSave =(Button) findViewById(R.id.btnSave);
-//        txtviewwifi = (TextView) findViewById(R.id.RSS_DATA);
-//
-//        btnCollect1.setOnClickListener(this);
-//        btnCollect2.setOnClickListener(this);
-//        btnCollect3.setOnClickListener(this);
-//        btnCollect4.setOnClickListener(this);
-//        btnCollect5.setOnClickListener(this);
-//        btnCollect6.setOnClickListener(this);
-//        btnCollect7.setOnClickListener(this);
-//        btnCollect8.setOnClickListener(this);
-//        btnCollect9.setOnClickListener(this);
-//        btnCollect10.setOnClickListener(this);
-//        btnCollect11.setOnClickListener(this);
-//        btnCollect12.setOnClickListener(this);
-//        btnCollect13.setOnClickListener(this);
-//        btnCollect14.setOnClickListener(this);
-//        btnCollect15.setOnClickListener(this);
-//        btnCollect16.setOnClickListener(this);
-//        btnCollect17.setOnClickListener(this);
-//        btnSave.setOnClickListener(this);
-//
-//        dataC1  = new ArrayList<RFData>();
-//        dataC2  = new ArrayList<RFData>();
-//        dataC3  = new ArrayList<RFData>();
-//        dataC4  = new ArrayList<RFData>();
-//        dataC5  = new ArrayList<RFData>();
-//        dataC6  = new ArrayList<RFData>();
-//        dataC7  = new ArrayList<RFData>();
-//        dataC8  = new ArrayList<RFData>();
-//        dataC9  = new ArrayList<RFData>();
-//        dataC10  = new ArrayList<RFData>();
-//        dataC11  = new ArrayList<RFData>();
-//        dataC12  = new ArrayList<RFData>();
-//        dataC13  = new ArrayList<RFData>();
-//        dataC14  = new ArrayList<RFData>();
-//        dataC15  = new ArrayList<RFData>();
-//        dataC16  = new ArrayList<RFData>();
-//        dataC17  = new ArrayList<RFData>();
-//        fingerprintingData  = new ArrayList<RFData>();
-//        intentFilter.addAction(WifiManager.RSSI_CHANGED_ACTION);
+        btnInitial = (Button) findViewById(R.id.btnInitial);
+        btnSenseNewAP = (Button) findViewById(R.id.btnsenseap);
+        btnSenseNewScan =(Button) findViewById(R.id.btnsensenew);
+        btnSenseNewAP.setOnClickListener(this);
+        btnSenseNewScan.setOnClickListener(this);
+        btnInitial.setOnClickListener(this);
+        txtviewwifi = (TextView) findViewById(R.id.textView);
 
-        //initializeBoolValues();
+
+
+     rfTestData  = new ArrayList<RFClass>();
+     intentFilter.addAction(WifiManager.RSSI_CHANGED_ACTION);
+
+
     }
+    public void updateProgress(final  int itcount) {
+        runOnUiThread(new Runnable() {
+            public void run() {
+                final int interation =itcount;
 
+                String stringy = "Localizing Iterations: " + interation;
+
+                txtviewwifi.setText(stringy);
+            }});
+    }
+    // This Method draws a point on the specified cell location
+    private void drawLocation(float x, float y) {
+        BitmapFactory.Options myOptions = new BitmapFactory.Options();
+        myOptions.inDither = true;
+        myOptions.inScaled = false;
+        myOptions.inPreferredConfig = Bitmap.Config.ARGB_8888;// important
+        myOptions.inPurgeable = true;
+
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.floor9, myOptions);
+        Paint paint = new Paint();
+        paint.setAntiAlias(true);
+        paint.setColor(Color.RED);
+
+
+        Bitmap workingBitmap = Bitmap.createBitmap(bitmap);
+        mutableBitmap = workingBitmap.copy(Bitmap.Config.ARGB_8888, true);
+
+
+        canvas = new Canvas(mutableBitmap);
+        canvas.drawCircle(x, y, 10, paint);
+
+
+        ImageView imageView = (ImageView)findViewById(R.id.imageView);
+        imageView.setAdjustViewBounds(true);
+        imageView.setScaleType(ImageView.ScaleType.FIT_XY);
+        imageView.setImageBitmap(mutableBitmap);
+    }
+    private void clearLocationPoints()
+    {
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.floor9);
+        Bitmap workingBitmap = Bitmap.createBitmap(bitmap);
+        mutableBitmap = workingBitmap.copy(Bitmap.Config.ARGB_8888, true);
+        canvas = new Canvas(mutableBitmap);
+        ImageView imageView = (ImageView)findViewById(R.id.imageView);
+        imageView.setAdjustViewBounds(true);
+        imageView.setScaleType(ImageView.ScaleType.FIT_XY);
+        imageView.setImageBitmap(mutableBitmap);
+
+
+    }
 
     /****************************************************************
      ***********************   BUTTONS stuff   **********************
@@ -201,156 +256,54 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
 
     @Override
-    public void onClick(View v) {/*
+    public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btnScanC1:
-                this.disableButtons();
-                registerReceiver(myRssiChangeReceiver, intentFilter);
-                btnClickedIs = ButtonClicked.btn1;
-                btn1Used = true;
-                startTimer();
+            case R.id.btnInitial:
+                drawLocation(cellspoints[0][0],cellspoints[0][1]);
+                //drawLocation(cellspoints[1][0],cellspoints[1][1]);
+                //drawLocation(cellspoints[2][0],cellspoints[2][1]);
+                // drawLocation(cellspoints[3][0],cellspoints[3][1]);
+                //drawLocation(cellspoints[4][0],cellspoints[4][1]);
+                // drawLocation(cellspoints[5][0],cellspoints[5][1]);
+                //drawLocation(cellspoints[6][0],cellspoints[6][1]);
+                //drawLocation(cellspoints[7][0],cellspoints[7][1]);
+                // drawLocation(cellspoints[8][0],cellspoints[8][1]);
+                //drawLocation(cellspoints[9][0],cellspoints[9][1]);
+                //drawLocation(cellspoints[10][0],cellspoints[10][1]);
+                // drawLocation(cellspoints[11][0],cellspoints[11][1]);
+                //drawLocation(cellspoints[12][0],cellspoints[12][1]);
+                // drawLocation(cellspoints[13][0],cellspoints[13][1]);
+                //  drawLocation(cellspoints[14][0],cellspoints[14][1]);
+                //drawLocation(cellspoints[15][0],cellspoints[15][1]);
+                //drawLocation(cellspoints[16][0],cellspoints[16][1]);
+                //clearLocationPoints();
                 break;
-            case R.id.btnScanC2:
-                this.disableButtons();
-                registerReceiver(myRssiChangeReceiver , intentFilter);
-                btnClickedIs = ButtonClicked.btn2;
-                btn2Used = true;
-                startTimer();
+
+            case R.id.btnsenseap:
+
+                updateProgress(100);
                 break;
-            case R.id.btnScanC3:
-                this.disableButtons();
-                registerReceiver(myRssiChangeReceiver, intentFilter);
-                btnClickedIs = ButtonClicked.btn3;
-                btn3Used = true;
-                startTimer();
-                break;
-            case R.id.btnScanC4:
-                this.disableButtons();
-                registerReceiver(myRssiChangeReceiver, intentFilter);
-                btnClickedIs = ButtonClicked.btn4;
-                btn4Used = true;
-                startTimer();
+
+            case R.id.btnsensenew:
+                 clearLocationPoints();
+                 registerReceiver(myRssiChangeReceiver, intentFilter);
 
                 break;
-            case R.id.btnScanC5:
-                this.disableButtons();
-                registerReceiver(myRssiChangeReceiver, intentFilter);
-                btnClickedIs = ButtonClicked.btn5;
-                btn5Used = true;
-                startTimer();
 
-                break;
-            case R.id.btnScanC6:
-                this.disableButtons();
-                registerReceiver(myRssiChangeReceiver, intentFilter);
-                btnClickedIs = ButtonClicked.btn6;
-                btn6Used = true;
-                startTimer();
-
-                break;
-            case R.id.btnScanC7:
-                this.disableButtons();
-                registerReceiver(myRssiChangeReceiver, intentFilter);
-                btnClickedIs = ButtonClicked.btn7;
-                btn7Used = true;
-
-                startTimer();
-                break;
-            case R.id.btnScanC8:
-                this.disableButtons();
-                registerReceiver(myRssiChangeReceiver, intentFilter);
-                btnClickedIs = ButtonClicked.btn8;
-                btn8Used = true;
-                startTimer();
-
-                break;
-            case R.id.btnScanC9:
-                this.disableButtons();
-                registerReceiver(myRssiChangeReceiver, intentFilter);
-                btnClickedIs = ButtonClicked.btn9;
-                btn9Used = true;
-                startTimer();
-
-                break;
-            case R.id.btnScanC10:
-                this.disableButtons();
-                registerReceiver(myRssiChangeReceiver, intentFilter);
-                btnClickedIs = ButtonClicked.btn10;
-                btn10Used = true;
-                startTimer();
-
-                break;
-            case R.id.btnScanC11:
-                this.disableButtons();
-                registerReceiver(myRssiChangeReceiver, intentFilter);
-                btnClickedIs = ButtonClicked.btn11;
-                btn11Used = true;
-                startTimer();
-
-                break;
-            case R.id.btnScanC12:
-                this.disableButtons();
-                registerReceiver(myRssiChangeReceiver, intentFilter);
-                btnClickedIs = ButtonClicked.btn12;
-                btn12Used = true;
-                startTimer();
-
-                break;
-            case R.id.btnScanC13:
-                this.disableButtons();
-                registerReceiver(myRssiChangeReceiver, intentFilter);
-                btnClickedIs = ButtonClicked.btn13;
-                btn13Used = true;
-                startTimer();
-
-                break;
-            case R.id.btnScanC14:
-                this.disableButtons();
-                registerReceiver(myRssiChangeReceiver, intentFilter);
-                btnClickedIs = ButtonClicked.btn14;
-                btn14Used = true;
-                startTimer();
-
-                break;
-            case R.id.btnScanC15:
-                this.disableButtons();
-                registerReceiver(myRssiChangeReceiver, intentFilter);
-                btnClickedIs = ButtonClicked.btn15;
-                btn15Used = true;
-                startTimer();
-
-                break;
-            case R.id.btnScanC16:
-                this.disableButtons();
-                registerReceiver(myRssiChangeReceiver, intentFilter);
-                btnClickedIs = ButtonClicked.btn16;
-                btn16Used = true;
-                startTimer();
-
-                break;
-            case R.id.btnScanC17:
-                this.disableButtons();
-                registerReceiver(myRssiChangeReceiver, intentFilter);
-                btnClickedIs = ButtonClicked.btn17;
-                btn17Used = true;
-                startTimer();
-
-                break;
             default:
                 break;
-            case R.id.btnSave:
-                saveData();
-               break;
 
-        }*/
+
+        }
     }
+
 
 
     /***************************************************************************************
      ********************************* Broadcast Receiver **********************************
      ***************************************************************************************/
 
-/*    private BroadcastReceiver myRssiChangeReceiver
+    private BroadcastReceiver myRssiChangeReceiver
             = new BroadcastReceiver(){
 
         @Override
@@ -364,26 +317,28 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
             wifiList = w.getScanResults(); // Returns a <list> of scanResults
             for (ScanResult aWifiList : wifiList) {
-                sb.append(Integer.toString(fingerprintingData.size())).append(".");
+                sb.append(Integer.toString(rfTestData.size())).append(".");
                 sb.append(aWifiList.BSSID);
                 sb.append(aWifiList.level);
                 sb.append("\n");
                 bssid = aWifiList.BSSID;
                 rssi = aWifiList.level;
 
-                RFData rfData = new RFData(bssid, rssi);
-                fingerprintingData.add(rfData);
+                RFClass rfData = new RFClass(rssi,bssid);
+                rfTestData.add(rfData);
+                updateProgress(rfTestData.size());
 
             }
-            StringBuilder lsttext =  new StringBuilder();
+          //  updateProgress(rfTestData.size());
+           /* StringBuilder lsttext =  new StringBuilder();
             lsttext.append(txtviewwifi.getText()).append("\n").append(sb);
-            txtviewwifi.setText(lsttext);
-
+            txtviewwifi.setText(lsttext);*/
+             /*if(rfTestData.size()>10)
+                 startBayesian();*/
         }};
 
 
 
-*/
 
 
     /***************************************************************************************
@@ -626,6 +581,17 @@ public class MainActivity extends Activity implements View.OnClickListener {
     /***********************************************************************************
      ****************************    BAYESIAN ALGORITHM     ****************************
      **********************************************************************************/
+
+    public void startBayesian(){
+        for(int i = 0; i < rfTestData.size(); i++){
+            RFClass testPoint1 = rfTestData.get(i);
+            float [] tempProb = getProb(testPoint1.getId(), testPoint1.getRss());
+            posterior = multProbAndPriorAndNormalize(tempProb, prior);
+            //Update prior
+            prior = posterior;
+        }
+    }
+
 
     private static float getProbFromCell(Map<String, HashMap<Integer, Float>> cell, String id, int rss){
         if(cell.containsKey(id)){
