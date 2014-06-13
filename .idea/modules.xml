@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Localization2.iml" filepath="$PROJECT_DIR$/Localization2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RFLocalization.iml" filepath="$PROJECT_DIR$/RFLocalization.iml" />
     </modules>
   </component>
 </project>

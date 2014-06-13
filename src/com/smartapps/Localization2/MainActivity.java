@@ -164,8 +164,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
 
 
-        /*  Print data
-        Iterator entries = cell1.entrySet().iterator();
+        //  Print data
+       /* Iterator entries = cell1.entrySet().iterator();
         while (entries.hasNext()) {
             Map.Entry thisEntry = (Map.Entry) entries.next();
             String key = (String)thisEntry.getKey();
@@ -178,8 +178,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 Object value2 = leEntry.getValue();
                 System.out.println("           Rssi "+ key2 + " PROBABILITY " + value2);
             }
-        }*/
-
+        }
+*/
 
 
         //BUTTONS
@@ -333,8 +333,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
            /* StringBuilder lsttext =  new StringBuilder();
             lsttext.append(txtviewwifi.getText()).append("\n").append(sb);
             txtviewwifi.setText(lsttext);*/
-             /*if(rfTestData.size()>10)
-                 startBayesian();*/
+             if(rfTestData.size()>10) {
+
+
+                 startBayesian();
+             }
         }};
 
 
