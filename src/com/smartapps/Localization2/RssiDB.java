@@ -413,6 +413,7 @@ public class RssiDB extends SQLiteOpenHelper {
         database.execSQL(C15_CREATE_TRAINING);
         database.execSQL(C16_CREATE_TRAINING);
         database.execSQL(C17_CREATE_TRAINING);
+
         insertDataMacIDS(database);
         insertDataC1(database);
         insertDataC2(database);
@@ -431,7 +432,6 @@ public class RssiDB extends SQLiteOpenHelper {
         insertDataC15(database);
         insertDataC16(database);
         insertDataC17(database);
-
 
     }
 
@@ -498,6 +498,7 @@ public class RssiDB extends SQLiteOpenHelper {
 
         ContentValues values = new ContentValues();
 
+
         values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:06");
         values.put(RssiDB.RSSI_VALUE,  "-100");
         values.put(RssiDB.PROBABILITY, "1.67449051634921E-201");
@@ -521,7 +522,6 @@ public class RssiDB extends SQLiteOpenHelper {
         values.put(RssiDB.PROBABILITY, "1.13379656771798E-181");
         db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
         values = new ContentValues();
-
 
         values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:06");
         values.put(RssiDB.RSSI_VALUE,  "-96");
@@ -1006,6 +1006,2048 @@ public class RssiDB extends SQLiteOpenHelper {
         values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:06");
         values.put(RssiDB.RSSI_VALUE,  "-16");
         values.put(RssiDB.PROBABILITY, "2.43891604961885E-37");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-100");
+        values.put(RssiDB.PROBABILITY, "3.84797275332402E-25");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-99");
+        values.put(RssiDB.PROBABILITY, "1.38361902734316E-23");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-98");
+        values.put(RssiDB.PROBABILITY, "4.40212441311819E-22");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-97");
+        values.put(RssiDB.PROBABILITY, "1.23927973580301E-20");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-96");
+        values.put(RssiDB.PROBABILITY, "3.08700713622332E-19");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-95");
+        values.put(RssiDB.PROBABILITY, "6.80404485079755E-18");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-94");
+        values.put(RssiDB.PROBABILITY, "1.32696036528911E-16");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-93");
+        values.put(RssiDB.PROBABILITY, "2.28986555258835E-15");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-92");
+        values.put(RssiDB.PROBABILITY, "3.49641734279619E-14");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-91");
+        values.put(RssiDB.PROBABILITY, "4.72386847060607E-13");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-90");
+        values.put(RssiDB.PROBABILITY, "5.64720530738966E-12");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-89");
+        values.put(RssiDB.PROBABILITY, "5.97352391173771E-11");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-88");
+        values.put(RssiDB.PROBABILITY, "5.59099218398222E-10");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-87");
+        values.put(RssiDB.PROBABILITY, "4.63029235370675E-09");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-86");
+        values.put(RssiDB.PROBABILITY, "3.39304164443798E-08");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-85");
+        values.put(RssiDB.PROBABILITY, "2.20004323797933E-07");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-84");
+        values.put(RssiDB.PROBABILITY, "1.26221835580295E-06");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-83");
+        values.put(RssiDB.PROBABILITY, "6.40765346150874E-06");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-82");
+        values.put(RssiDB.PROBABILITY, "2.87822532407639E-05");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-81");
+        values.put(RssiDB.PROBABILITY, "0.00011439625653903");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-80");
+        values.put(RssiDB.PROBABILITY, "0.000402309312139545");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-79");
+        values.put(RssiDB.PROBABILITY, "0.00125189990522711");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-78");
+        values.put(RssiDB.PROBABILITY, "0.00344699280680646");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-77");
+        values.put(RssiDB.PROBABILITY, "0.00839793283439238");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-76");
+        values.put(RssiDB.PROBABILITY, "0.0181036300359832");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-75");
+        values.put(RssiDB.PROBABILITY, "0.034531876894109");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-74");
+        values.put(RssiDB.PROBABILITY, "0.0582822019381398");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-73");
+        values.put(RssiDB.PROBABILITY, "0.0870388146427684");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-72");
+        values.put(RssiDB.PROBABILITY, "0.115014139252234");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-71");
+        values.put(RssiDB.PROBABILITY, "0.134477847342173");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-70");
+        values.put(RssiDB.PROBABILITY, "0.139127029502579");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-69");
+        values.put(RssiDB.PROBABILITY, "0.127360139453218");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-68");
+        values.put(RssiDB.PROBABILITY, "0.103161295750004");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-67");
+        values.put(RssiDB.PROBABILITY, "0.0739369106305819");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-66");
+        values.put(RssiDB.PROBABILITY, "0.0468885778926957");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-65");
+        values.put(RssiDB.PROBABILITY, "0.0263108010746549");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-64");
+        values.put(RssiDB.PROBABILITY, "0.013063583644597");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-63");
+        values.put(RssiDB.PROBABILITY, "0.00573920633640308");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-62");
+        values.put(RssiDB.PROBABILITY, "0.00223101554580351");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-61");
+        values.put(RssiDB.PROBABILITY, "0.000767387292633754");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-60");
+        values.put(RssiDB.PROBABILITY, "0.000233554295599984");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-59");
+        values.put(RssiDB.PROBABILITY, "6.28959041460413E-05");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-58");
+        values.put(RssiDB.PROBABILITY, "1.49871177352887E-05");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-57");
+        values.put(RssiDB.PROBABILITY, "3.15991297853036E-06");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-56");
+        values.put(RssiDB.PROBABILITY, "5.8951298484525E-07");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-55");
+        values.put(RssiDB.PROBABILITY, "9.73134517601641E-08");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-54");
+        values.put(RssiDB.PROBABILITY, "1.4213912207619E-08");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-53");
+        values.put(RssiDB.PROBABILITY, "1.83702737908571E-09");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-52");
+        values.put(RssiDB.PROBABILITY, "2.10077179855997E-10");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-51");
+        values.put(RssiDB.PROBABILITY, "2.12570687652471E-11");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-50");
+        values.put(RssiDB.PROBABILITY, "1.90322058106379E-12");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-49");
+        values.put(RssiDB.PROBABILITY, "1.50777355741048E-13");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-48");
+        values.put(RssiDB.PROBABILITY, "1.05692548270388E-14");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-47");
+        values.put(RssiDB.PROBABILITY, "6.55562140380616E-16");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-46");
+        values.put(RssiDB.PROBABILITY, "3.5978628929152E-17");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-45");
+        values.put(RssiDB.PROBABILITY, "1.74717579001612E-18");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-44");
+        values.put(RssiDB.PROBABILITY, "7.50740501849608E-20");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-43");
+        values.put(RssiDB.PROBABILITY, "2.85433102882772E-21");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-42");
+        values.put(RssiDB.PROBABILITY, "9.60240634776375E-23");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-41");
+        values.put(RssiDB.PROBABILITY, "2.85836095561938E-24");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-40");
+        values.put(RssiDB.PROBABILITY, "7.52861885093885E-26");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-39");
+        values.put(RssiDB.PROBABILITY, "1.75458656618723E-27");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-38");
+        values.put(RssiDB.PROBABILITY, "3.61822473464124E-29");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-37");
+        values.put(RssiDB.PROBABILITY, "6.60203048986554E-31");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-36");
+        values.put(RssiDB.PROBABILITY, "1.06591055402375E-32");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-35");
+        values.put(RssiDB.PROBABILITY, "1.52273821921356E-34");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-34");
+        values.put(RssiDB.PROBABILITY, "1.92482381470412E-36");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-33");
+        values.put(RssiDB.PROBABILITY, "2.15287080107536E-38");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-32");
+        values.put(RssiDB.PROBABILITY, "2.13062098906616E-40");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-31");
+        values.put(RssiDB.PROBABILITY, "1.86575959463818E-42");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-30");
+        values.put(RssiDB.PROBABILITY, "1.44566083486766E-44");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-29");
+        values.put(RssiDB.PROBABILITY, "9.91147743385468E-47");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-28");
+        values.put(RssiDB.PROBABILITY, "6.01272895241072E-49");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-27");
+        values.put(RssiDB.PROBABILITY, "3.22749892405251E-51");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-26");
+        values.put(RssiDB.PROBABILITY, "1.53292827455787E-53");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-25");
+        values.put(RssiDB.PROBABILITY, "6.44226837009852E-56");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-24");
+        values.put(RssiDB.PROBABILITY, "2.39561508735925E-58");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-23");
+        values.put(RssiDB.PROBABILITY, "7.88236453471102E-61");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-22");
+        values.put(RssiDB.PROBABILITY, "2.29486552180842E-63");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-21");
+        values.put(RssiDB.PROBABILITY, "5.91179295611712E-66");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-20");
+        values.put(RssiDB.PROBABILITY, "1.34754240145139E-68");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-19");
+        values.put(RssiDB.PROBABILITY, "2.71785893902311E-71");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-18");
+        values.put(RssiDB.PROBABILITY, "4.85034504446535E-74");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-17");
+        values.put(RssiDB.PROBABILITY, "7.65913290970553E-77");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-16");
+        values.put(RssiDB.PROBABILITY, "1.07015781289759E-79");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-100");
+        values.put(RssiDB.PROBABILITY, "5.12481021735922E-28");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-99");
+        values.put(RssiDB.PROBABILITY, "2.90776529427042E-26");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-98");
+        values.put(RssiDB.PROBABILITY, "1.43650726961022E-24");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-97");
+        values.put(RssiDB.PROBABILITY, "6.17907156887092E-23");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-96");
+        values.put(RssiDB.PROBABILITY, "2.31422478576585E-21");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-95");
+        values.put(RssiDB.PROBABILITY, "7.54665981922227E-20");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-94");
+        values.put(RssiDB.PROBABILITY, "2.14274714304866E-18");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-93");
+        values.put(RssiDB.PROBABILITY, "5.29729298316592E-17");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-92");
+        values.put(RssiDB.PROBABILITY, "1.14026023814161E-15");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-91");
+        values.put(RssiDB.PROBABILITY, "2.13708051697616E-14");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-90");
+        values.put(RssiDB.PROBABILITY, "3.48742364330554E-13");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-89");
+        values.put(RssiDB.PROBABILITY, "4.9551345082007E-12");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-88");
+        values.put(RssiDB.PROBABILITY, "6.1301782986063E-11");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-87");
+        values.put(RssiDB.PROBABILITY, "6.60324912581598E-10");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-86");
+        values.put(RssiDB.PROBABILITY, "6.19311545840395E-09");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-85");
+        values.put(RssiDB.PROBABILITY, "5.0574033121476E-08");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-84");
+        values.put(RssiDB.PROBABILITY, "3.59594398948299E-07");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-83");
+        values.put(RssiDB.PROBABILITY, "2.22620506396647E-06");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-82");
+        values.put(RssiDB.PROBABILITY, "1.20000852676825E-05");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-81");
+        values.put(RssiDB.PROBABILITY, "5.63210075573118E-05");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-80");
+        values.put(RssiDB.PROBABILITY, "0.000230156591356981");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-79");
+        values.put(RssiDB.PROBABILITY, "0.000818923504571961");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-78");
+        values.put(RssiDB.PROBABILITY, "0.00253705670169526");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-77");
+        values.put(RssiDB.PROBABILITY, "0.00684358914336481");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-76");
+        values.put(RssiDB.PROBABILITY, "0.0160732833828902");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-75");
+        values.put(RssiDB.PROBABILITY, "0.0328694314896471");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-74");
+        values.put(RssiDB.PROBABILITY, "0.058525711396273");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-73");
+        values.put(RssiDB.PROBABILITY, "0.0907335969721921");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-72");
+        values.put(RssiDB.PROBABILITY, "0.122477545015965");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-71");
+        values.put(RssiDB.PROBABILITY, "0.143950021832947");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-70");
+        values.put(RssiDB.PROBABILITY, "0.147310571855378");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-69");
+        values.put(RssiDB.PROBABILITY, "0.131257163157532");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-68");
+        values.put(RssiDB.PROBABILITY, "0.101830770488521");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-67");
+        values.put(RssiDB.PROBABILITY, "0.0687863022742995");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-66");
+        values.put(RssiDB.PROBABILITY, "0.0404568267559391");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-65");
+        values.put(RssiDB.PROBABILITY, "0.0207180361038622");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-64");
+        values.put(RssiDB.PROBABILITY, "0.00923787908060258");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-63");
+        values.put(RssiDB.PROBABILITY, "0.00358643429533541");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-62");
+        values.put(RssiDB.PROBABILITY, "0.00121232874401625");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-61");
+        values.put(RssiDB.PROBABILITY, "0.000356816429949589");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-60");
+        values.put(RssiDB.PROBABILITY, "9.1439996953736E-05");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-59");
+        values.put(RssiDB.PROBABILITY, "2.04030211642591E-05");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-58");
+        values.put(RssiDB.PROBABILITY, "3.96387248509797E-06");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-57");
+        values.put(RssiDB.PROBABILITY, "6.70520079796345E-07");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-56");
+        values.put(RssiDB.PROBABILITY, "9.87576663197001E-08");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-55");
+        values.put(RssiDB.PROBABILITY, "1.26647542644696E-08");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-54");
+        values.put(RssiDB.PROBABILITY, "1.4141309718155E-09");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-53");
+        values.put(RssiDB.PROBABILITY, "1.37483132443596E-10");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-52");
+        values.put(RssiDB.PROBABILITY, "1.16379401922265E-11");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-51");
+        values.put(RssiDB.PROBABILITY, "8.57767804299682E-13");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-50");
+        values.put(RssiDB.PROBABILITY, "5.50465720981279E-14");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-49");
+        values.put(RssiDB.PROBABILITY, "3.07579747080244E-15");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-48");
+        values.put(RssiDB.PROBABILITY, "1.49641519476109E-16");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-47");
+        values.put(RssiDB.PROBABILITY, "6.3388927120571E-18");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-46");
+        values.put(RssiDB.PROBABILITY, "2.33798441037303E-19");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-45");
+        values.put(RssiDB.PROBABILITY, "7.50821566211674E-21");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-44");
+        values.put(RssiDB.PROBABILITY, "2.09941736016315E-22");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-43");
+        values.put(RssiDB.PROBABILITY, "5.11125734282237E-24");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-42");
+        values.put(RssiDB.PROBABILITY, "1.08348681003823E-25");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-41");
+        values.put(RssiDB.PROBABILITY, "1.99979937319175E-27");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-40");
+        values.put(RssiDB.PROBABILITY, "3.21378000931808E-29");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-39");
+        values.put(RssiDB.PROBABILITY, "4.49689533944165E-31");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-38");
+        values.put(RssiDB.PROBABILITY, "5.47868502046638E-33");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-37");
+        values.put(RssiDB.PROBABILITY, "5.81174838375409E-35");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-36");
+        values.put(RssiDB.PROBABILITY, "5.36789722489965E-37");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-35");
+        values.put(RssiDB.PROBABILITY, "4.31686531144578E-39");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-34");
+        values.put(RssiDB.PROBABILITY, "3.02273255240966E-41");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-33");
+        values.put(RssiDB.PROBABILITY, "1.8428834307376E-43");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-32");
+        values.put(RssiDB.PROBABILITY, "9.7827943830396E-46");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-31");
+        values.put(RssiDB.PROBABILITY, "4.5216287711655E-48");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-30");
+        values.put(RssiDB.PROBABILITY, "1.81967487885812E-50");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-29");
+        values.put(RssiDB.PROBABILITY, "6.37616597447124E-53");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-28");
+        values.put(RssiDB.PROBABILITY, "1.94532579316775E-55");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-27");
+        values.put(RssiDB.PROBABILITY, "5.16763694881449E-58");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-26");
+        values.put(RssiDB.PROBABILITY, "1.19524947696293E-60");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-25");
+        values.put(RssiDB.PROBABILITY, "2.4070884430283E-63");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-24");
+        values.put(RssiDB.PROBABILITY, "4.22077742513205E-66");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-23");
+        values.put(RssiDB.PROBABILITY, "6.44406292015319E-69");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-22");
+        values.put(RssiDB.PROBABILITY, "8.56631443043321E-72");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-21");
+        values.put(RssiDB.PROBABILITY, "9.91505592858657E-75");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-20");
+        values.put(RssiDB.PROBABILITY, "9.99224889303083E-78");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-19");
+        values.put(RssiDB.PROBABILITY, "8.76795346009195E-81");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-18");
+        values.put(RssiDB.PROBABILITY, "6.69884835509366E-84");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-17");
+        values.put(RssiDB.PROBABILITY, "4.45624412996497E-87");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d4");
+        values.put(RssiDB.RSSI_VALUE,  "-16");
+        values.put(RssiDB.PROBABILITY, "2.58109935059055E-90");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-100");
+        values.put(RssiDB.PROBABILITY, "5.25297236795298E-12");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-99");
+        values.put(RssiDB.PROBABILITY, "6.72993221943338E-10");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-98");
+        values.put(RssiDB.PROBABILITY, "5.07803460513112E-08");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-97");
+        values.put(RssiDB.PROBABILITY, "2.25662821517831E-06");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-96");
+        values.put(RssiDB.PROBABILITY, "5.9061403582528E-05");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-95");
+        values.put(RssiDB.PROBABILITY, "0.000910388798211057");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-94");
+        values.put(RssiDB.PROBABILITY, "0.00826474462976607");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-93");
+        values.put(RssiDB.PROBABILITY, "0.044188714182433");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-92");
+        values.put(RssiDB.PROBABILITY, "0.139146626599403");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-91");
+        values.put(RssiDB.PROBABILITY, "0.258055661420846");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-90");
+        values.put(RssiDB.PROBABILITY, "0.281860029298847");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-89");
+        values.put(RssiDB.PROBABILITY, "0.181314687592338");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-88");
+        values.put(RssiDB.PROBABILITY, "0.068692903148269");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-87");
+        values.put(RssiDB.PROBABILITY, "0.0153274584805339");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-86");
+        values.put(RssiDB.PROBABILITY, "0.00201422423679578");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-85");
+        values.put(RssiDB.PROBABILITY, "0.000155892376774604");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-84");
+        values.put(RssiDB.PROBABILITY, "7.10593665013076E-06");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-83");
+        values.put(RssiDB.PROBABILITY, "1.90764332076149E-07");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-82");
+        values.put(RssiDB.PROBABILITY, "3.01614636719519E-09");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-81");
+        values.put(RssiDB.PROBABILITY, "2.80858157116796E-11");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-80");
+        values.put(RssiDB.PROBABILITY, "1.54028491646543E-13");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-79");
+        values.put(RssiDB.PROBABILITY, "4.97501592365491E-16");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-78");
+        values.put(RssiDB.PROBABILITY, "9.46383761139202E-19");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-77");
+        values.put(RssiDB.PROBABILITY, "1.06027733097419E-21");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-76");
+        values.put(RssiDB.PROBABILITY, "6.99602035806557E-25");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-75");
+        values.put(RssiDB.PROBABILITY, "2.71870474342997E-28");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-74");
+        values.put(RssiDB.PROBABILITY, "6.22232107559117E-32");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-73");
+        values.put(RssiDB.PROBABILITY, "8.38730007975551E-36");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-72");
+        values.put(RssiDB.PROBABILITY, "6.6584223220127E-40");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-71");
+        values.put(RssiDB.PROBABILITY, "3.1131488458186E-44");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-70");
+        values.put(RssiDB.PROBABILITY, "8.5725065511109E-49");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-69");
+        values.put(RssiDB.PROBABILITY, "1.39025721505495E-53");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-68");
+        values.put(RssiDB.PROBABILITY, "1.32788933085769E-58");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-67");
+        values.put(RssiDB.PROBABILITY, "7.46978320197885E-64");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-66");
+        values.put(RssiDB.PROBABILITY, "2.47476237764086E-69");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-65");
+        values.put(RssiDB.PROBABILITY, "4.82879095673302E-75");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-64");
+        values.put(RssiDB.PROBABILITY, "5.549101853926E-81");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-63");
+        values.put(RssiDB.PROBABILITY, "3.75566096200304E-87");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-62");
+        values.put(RssiDB.PROBABILITY, "1.49702638701948E-93");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-61");
+        values.put(RssiDB.PROBABILITY, "3.51440592812161E-100");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-60");
+        values.put(RssiDB.PROBABILITY, "4.85907701072022E-107");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-59");
+        values.put(RssiDB.PROBABILITY, "3.95671740580816E-114");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-58");
+        values.put(RssiDB.PROBABILITY, "1.89756069778381E-121");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-57");
+        values.put(RssiDB.PROBABILITY, "5.35964113729296E-129");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-56");
+        values.put(RssiDB.PROBABILITY, "8.91569368172878E-137");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-55");
+        values.put(RssiDB.PROBABILITY, "8.73481996207918E-145");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-54");
+        values.put(RssiDB.PROBABILITY, "5.04001894465405E-153");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-53");
+        values.put(RssiDB.PROBABILITY, "1.71273341892643E-161");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-52");
+        values.put(RssiDB.PROBABILITY, "3.42788912791004E-170");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-51");
+        values.put(RssiDB.PROBABILITY, "4.04057482256026E-179");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-50");
+        values.put(RssiDB.PROBABILITY, "2.80503918196619E-188");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-49");
+        values.put(RssiDB.PROBABILITY, "1.14686976264048E-197");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-48");
+        values.put(RssiDB.PROBABILITY, "2.76165017905779E-207");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-47");
+        values.put(RssiDB.PROBABILITY, "3.91654048078674E-217");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-46");
+        values.put(RssiDB.PROBABILITY, "3.27126680075352E-227");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-45");
+        values.put(RssiDB.PROBABILITY, "1.60919511114624E-237");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-44");
+        values.put(RssiDB.PROBABILITY, "4.66209194949676E-248");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-43");
+        values.put(RssiDB.PROBABILITY, "7.95485663383028E-259");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-42");
+        values.put(RssiDB.PROBABILITY, "7.99398393497051E-270");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-41");
+        values.put(RssiDB.PROBABILITY, "4.73122473004293E-281");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-40");
+        values.put(RssiDB.PROBABILITY, "1.64916183304339E-292");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-39");
+        values.put(RssiDB.PROBABILITY, "3.38557442418298E-304");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-38");
+        values.put(RssiDB.PROBABILITY, "4.09336855920307E-316");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-37");
+        values.put(RssiDB.PROBABILITY, "0");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-36");
+        values.put(RssiDB.PROBABILITY, "0");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-35");
+        values.put(RssiDB.PROBABILITY, "0");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-34");
+        values.put(RssiDB.PROBABILITY, "0");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-33");
+        values.put(RssiDB.PROBABILITY, "0");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-32");
+        values.put(RssiDB.PROBABILITY, "0");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-31");
+        values.put(RssiDB.PROBABILITY, "0");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-30");
+        values.put(RssiDB.PROBABILITY, "0");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-29");
+        values.put(RssiDB.PROBABILITY, "0");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-28");
+        values.put(RssiDB.PROBABILITY, "0");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-27");
+        values.put(RssiDB.PROBABILITY, "0");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-26");
+        values.put(RssiDB.PROBABILITY, "0");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-25");
+        values.put(RssiDB.PROBABILITY, "0");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-24");
+        values.put(RssiDB.PROBABILITY, "0");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-23");
+        values.put(RssiDB.PROBABILITY, "0");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-22");
+        values.put(RssiDB.PROBABILITY, "0");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-21");
+        values.put(RssiDB.PROBABILITY, "0");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-20");
+        values.put(RssiDB.PROBABILITY, "0");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-19");
+        values.put(RssiDB.PROBABILITY, "0");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-18");
+        values.put(RssiDB.PROBABILITY, "0");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-17");
+        values.put(RssiDB.PROBABILITY, "0");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-16");
+        values.put(RssiDB.PROBABILITY, "0");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-100");
+        values.put(RssiDB.PROBABILITY, "1.65357585319008E-75");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-99");
+        values.put(RssiDB.PROBABILITY, "4.62129016214831E-73");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-98");
+        values.put(RssiDB.PROBABILITY, "1.17465542479196E-70");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-97");
+        values.put(RssiDB.PROBABILITY, "2.71560046320535E-68");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-96");
+        values.put(RssiDB.PROBABILITY, "5.70991172464793E-66");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-95");
+        values.put(RssiDB.PROBABILITY, "1.09194571587169E-63");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-94");
+        values.put(RssiDB.PROBABILITY, "1.89924432760213E-61");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-93");
+        values.put(RssiDB.PROBABILITY, "3.00447615691162E-59");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-92");
+        values.put(RssiDB.PROBABILITY, "4.32279679061644E-57");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-91");
+        values.put(RssiDB.PROBABILITY, "5.65677641446535E-55");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-90");
+        values.put(RssiDB.PROBABILITY, "6.73257718773683E-53");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-89");
+        values.put(RssiDB.PROBABILITY, "7.28788990935679E-51");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-88");
+        values.put(RssiDB.PROBABILITY, "7.17514035011965E-49");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-87");
+        values.put(RssiDB.PROBABILITY, "6.42491123817276E-47");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-86");
+        values.put(RssiDB.PROBABILITY, "5.23253326975688E-45");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-85");
+        values.put(RssiDB.PROBABILITY, "3.87583249219299E-43");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-84");
+        values.put(RssiDB.PROBABILITY, "2.61111581177904E-41");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-83");
+        values.put(RssiDB.PROBABILITY, "1.59990945422386E-39");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-82");
+        values.put(RssiDB.PROBABILITY, "8.91605645000785E-38");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-81");
+        values.put(RssiDB.PROBABILITY, "4.51916656665273E-36");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-80");
+        values.put(RssiDB.PROBABILITY, "2.083301001903E-34");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-79");
+        values.put(RssiDB.PROBABILITY, "8.73481741459551E-33");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-78");
+        values.put(RssiDB.PROBABILITY, "3.33091671940374E-31");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-77");
+        values.put(RssiDB.PROBABILITY, "1.15526562816954E-29");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-76");
+        values.put(RssiDB.PROBABILITY, "3.64424917964342E-28");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-75");
+        values.put(RssiDB.PROBABILITY, "1.04554423503357E-26");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-74");
+        values.put(RssiDB.PROBABILITY, "2.72825458289534E-25");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-73");
+        values.put(RssiDB.PROBABILITY, "6.47493644119998E-24");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-72");
+        values.put(RssiDB.PROBABILITY, "1.39763658573773E-22");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-71");
+        values.put(RssiDB.PROBABILITY, "2.74385493000817E-21");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-70");
+        values.put(RssiDB.PROBABILITY, "4.89932405954882E-20");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-69");
+        values.put(RssiDB.PROBABILITY, "7.95644969044042E-19");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-68");
+        values.put(RssiDB.PROBABILITY, "1.17519682758184E-17");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-67");
+        values.put(RssiDB.PROBABILITY, "1.57873789793372E-16");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-66");
+        values.put(RssiDB.PROBABILITY, "1.92893499881782E-15");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-65");
+        values.put(RssiDB.PROBABILITY, "2.14354836169986E-14");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-64");
+        values.put(RssiDB.PROBABILITY, "2.16649212208142E-13");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-63");
+        values.put(RssiDB.PROBABILITY, "1.99154019735335E-12");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-62");
+        values.put(RssiDB.PROBABILITY, "1.66505726239234E-11");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-61");
+        values.put(RssiDB.PROBABILITY, "1.26612739454794E-10");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-60");
+        values.put(RssiDB.PROBABILITY, "8.75656492047901E-10");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-59");
+        values.put(RssiDB.PROBABILITY, "5.50805505855886E-09");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-58");
+        values.put(RssiDB.PROBABILITY, "3.15116328973701E-08");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-57");
+        values.put(RssiDB.PROBABILITY, "1.63965198309332E-07");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-56");
+        values.put(RssiDB.PROBABILITY, "7.75962231760062E-07");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-55");
+        values.put(RssiDB.PROBABILITY, "3.33993198544033E-06");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-54");
+        values.put(RssiDB.PROBABILITY, "1.30750331000623E-05");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-53");
+        values.put(RssiDB.PROBABILITY, "4.65539038915285E-05");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-52");
+        values.put(RssiDB.PROBABILITY, "0.000150757021659597");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-51");
+        values.put(RssiDB.PROBABILITY, "0.000444024697342014");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-50");
+        values.put(RssiDB.PROBABILITY, "0.00118944629938441");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-49");
+        values.put(RssiDB.PROBABILITY, "0.00289794865597821");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-48");
+        values.put(RssiDB.PROBABILITY, "0.00642162097400311");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-47");
+        values.put(RssiDB.PROBABILITY, "0.0129421606046245");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-46");
+        values.put(RssiDB.PROBABILITY, "0.0237234057000049");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-45");
+        values.put(RssiDB.PROBABILITY, "0.0395508135774735");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-44");
+        values.put(RssiDB.PROBABILITY, "0.0599710899217687");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-43");
+        values.put(RssiDB.PROBABILITY, "0.0827059199493466");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-42");
+        values.put(RssiDB.PROBABILITY, "0.103738361981523");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-41");
+        values.put(RssiDB.PROBABILITY, "0.118345108016763");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-40");
+        values.put(RssiDB.PROBABILITY, "0.122791800968403");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-39");
+        values.put(RssiDB.PROBABILITY, "0.115876818436669");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-38");
+        values.put(RssiDB.PROBABILITY, "0.0994562065799678");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-37");
+        values.put(RssiDB.PROBABILITY, "0.0776381812636165");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-36");
+        values.put(RssiDB.PROBABILITY, "0.0551222517680198");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-35");
+        values.put(RssiDB.PROBABILITY, "0.0355948102593443");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-34");
+        values.put(RssiDB.PROBABILITY, "0.0209052106824565");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-33");
+        values.put(RssiDB.PROBABILITY, "0.0111668465894276");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-32");
+        values.put(RssiDB.PROBABILITY, "0.00542518666438232");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-31");
+        values.put(RssiDB.PROBABILITY, "0.00239721483088606");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-30");
+        values.put(RssiDB.PROBABILITY, "0.000963401594686228");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-29");
+        values.put(RssiDB.PROBABILITY, "0.000352140438286071");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-28");
+        values.put(RssiDB.PROBABILITY, "0.000117066483941481");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-27");
+        values.put(RssiDB.PROBABILITY, "3.53962605665053E-05");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-26");
+        values.put(RssiDB.PROBABILITY, "9.73397725047049E-06");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-25");
+        values.put(RssiDB.PROBABILITY, "2.43462123117233E-06");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-24");
+        values.put(RssiDB.PROBABILITY, "5.53835280338996E-07");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-23");
+        values.put(RssiDB.PROBABILITY, "1.14587690130203E-07");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-22");
+        values.put(RssiDB.PROBABILITY, "2.15627152054497E-08");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-21");
+        values.put(RssiDB.PROBABILITY, "3.69043077654129E-09");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-20");
+        values.put(RssiDB.PROBABILITY, "5.7445870466101E-10");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-19");
+        values.put(RssiDB.PROBABILITY, "8.13296119961608E-11");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-18");
+        values.put(RssiDB.PROBABILITY, "1.04724120275072E-11");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-17");
+        values.put(RssiDB.PROBABILITY, "1.22645855188798E-12");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-16");
+        values.put(RssiDB.PROBABILITY, "1.30637290859951E-13");
         db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
         values = new ContentValues();
 
@@ -1519,16 +3561,521 @@ public class RssiDB extends SQLiteOpenHelper {
         db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
         values = new ContentValues();
 
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-100");
+        values.put(RssiDB.PROBABILITY, "1.20859028930978E-165");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-99");
+        values.put(RssiDB.PROBABILITY, "9.9894462958414E-160");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-98");
+        values.put(RssiDB.PROBABILITY, "6.43028337035685E-154");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-97");
+        values.put(RssiDB.PROBABILITY, "3.22362998569893E-148");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-96");
+        values.put(RssiDB.PROBABILITY, "1.2585968525967E-142");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-95");
+        values.put(RssiDB.PROBABILITY, "3.8269648682097E-137");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-94");
+        values.put(RssiDB.PROBABILITY, "9.06251396775763E-132");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-93");
+        values.put(RssiDB.PROBABILITY, "1.67135722089723E-126");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-92");
+        values.put(RssiDB.PROBABILITY, "2.40058039295344E-121");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-91");
+        values.put(RssiDB.PROBABILITY, "2.6852801825103E-116");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-90");
+        values.put(RssiDB.PROBABILITY, "2.33931840862502E-111");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-89");
+        values.put(RssiDB.PROBABILITY, "1.58714077641263E-106");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-88");
+        values.put(RssiDB.PROBABILITY, "8.38625261427196E-102");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-87");
+        values.put(RssiDB.PROBABILITY, "3.45101471006361E-97");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-86");
+        values.put(RssiDB.PROBABILITY, "1.10599219010529E-92");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-85");
+        values.put(RssiDB.PROBABILITY, "2.76047418107988E-88");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-84");
+        values.put(RssiDB.PROBABILITY, "5.36588917034133E-84");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-83");
+        values.put(RssiDB.PROBABILITY, "8.12318018386804E-80");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-82");
+        values.put(RssiDB.PROBABILITY, "9.57716245835968E-76");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-81");
+        values.put(RssiDB.PROBABILITY, "8.79374771297552E-72");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-80");
+        values.put(RssiDB.PROBABILITY, "6.28836191439097E-68");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-79");
+        values.put(RssiDB.PROBABILITY, "3.50209106715929E-64");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-78");
+        values.put(RssiDB.PROBABILITY, "1.51895084939496E-60");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-77");
+        values.put(RssiDB.PROBABILITY, "5.13081536395952E-57");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-76");
+        values.put(RssiDB.PROBABILITY, "1.34975651229429E-53");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-75");
+        values.put(RssiDB.PROBABILITY, "2.76535477492221E-50");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-74");
+        values.put(RssiDB.PROBABILITY, "4.41237748729741E-47");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-73");
+        values.put(RssiDB.PROBABILITY, "5.48303279694486E-44");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-72");
+        values.put(RssiDB.PROBABILITY, "5.30634406957608E-41");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-71");
+        values.put(RssiDB.PROBABILITY, "3.99941387850341E-38");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-70");
+        values.put(RssiDB.PROBABILITY, "2.34759767898757E-35");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-69");
+        values.put(RssiDB.PROBABILITY, "1.07319186783153E-32");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-68");
+        values.put(RssiDB.PROBABILITY, "3.8208277057936E-30");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-67");
+        values.put(RssiDB.PROBABILITY, "1.05940962675468E-27");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-66");
+        values.put(RssiDB.PROBABILITY, "2.2876877952604E-25");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-65");
+        values.put(RssiDB.PROBABILITY, "3.84729931335321E-23");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-64");
+        values.put(RssiDB.PROBABILITY, "5.03896769715001E-21");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-63");
+        values.put(RssiDB.PROBABILITY, "5.13988678583446E-19");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-62");
+        values.put(RssiDB.PROBABILITY, "4.08311781583478E-17");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-61");
+        values.put(RssiDB.PROBABILITY, "2.52613554176845E-15");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-60");
+        values.put(RssiDB.PROBABILITY, "1.21716026651451E-13");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-59");
+        values.put(RssiDB.PROBABILITY, "4.5673602041823E-12");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-58");
+        values.put(RssiDB.PROBABILITY, "1.33477830738143E-10");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-57");
+        values.put(RssiDB.PROBABILITY, "3.03794142491164E-09");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-56");
+        values.put(RssiDB.PROBABILITY, "5.38488002127164E-08");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-55");
+        values.put(RssiDB.PROBABILITY, "7.43359757367149E-07");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-54");
+        values.put(RssiDB.PROBABILITY, "7.99187055345274E-06");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-53");
+        values.put(RssiDB.PROBABILITY, "6.69151128824427E-05");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-52");
+        values.put(RssiDB.PROBABILITY, "0.00043634134752288");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-51");
+        values.put(RssiDB.PROBABILITY, "0.002215924205969");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-50");
+        values.put(RssiDB.PROBABILITY, "0.00876415024678427");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-49");
+        values.put(RssiDB.PROBABILITY, "0.026995483256594");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-48");
+        values.put(RssiDB.PROBABILITY, "0.0647587978329459");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-47");
+        values.put(RssiDB.PROBABILITY, "0.120985362259572");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-46");
+        values.put(RssiDB.PROBABILITY, "0.17603266338215");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-45");
+        values.put(RssiDB.PROBABILITY, "0.199471140200716");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-44");
+        values.put(RssiDB.PROBABILITY, "0.17603266338215");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-43");
+        values.put(RssiDB.PROBABILITY, "0.120985362259572");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-42");
+        values.put(RssiDB.PROBABILITY, "0.0647587978329459");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-41");
+        values.put(RssiDB.PROBABILITY, "0.026995483256594");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-40");
+        values.put(RssiDB.PROBABILITY, "0.00876415024678427");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-39");
+        values.put(RssiDB.PROBABILITY, "0.002215924205969");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-38");
+        values.put(RssiDB.PROBABILITY, "0.00043634134752288");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-37");
+        values.put(RssiDB.PROBABILITY, "6.69151128824427E-05");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-36");
+        values.put(RssiDB.PROBABILITY, "7.99187055345274E-06");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-35");
+        values.put(RssiDB.PROBABILITY, "7.43359757367149E-07");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-34");
+        values.put(RssiDB.PROBABILITY, "5.38488002127164E-08");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-33");
+        values.put(RssiDB.PROBABILITY, "3.03794142491164E-09");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-32");
+        values.put(RssiDB.PROBABILITY, "1.33477830738143E-10");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-31");
+        values.put(RssiDB.PROBABILITY, "4.5673602041823E-12");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-30");
+        values.put(RssiDB.PROBABILITY, "1.21716026651451E-13");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-29");
+        values.put(RssiDB.PROBABILITY, "2.52613554176845E-15");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-28");
+        values.put(RssiDB.PROBABILITY, "4.08311781583478E-17");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-27");
+        values.put(RssiDB.PROBABILITY, "5.13988678583446E-19");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-26");
+        values.put(RssiDB.PROBABILITY, "5.03896769715001E-21");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-25");
+        values.put(RssiDB.PROBABILITY, "3.84729931335321E-23");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-24");
+        values.put(RssiDB.PROBABILITY, "2.2876877952604E-25");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-23");
+        values.put(RssiDB.PROBABILITY, "1.05940962675468E-27");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-22");
+        values.put(RssiDB.PROBABILITY, "3.8208277057936E-30");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-21");
+        values.put(RssiDB.PROBABILITY, "1.07319186783153E-32");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-20");
+        values.put(RssiDB.PROBABILITY, "2.34759767898757E-35");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-19");
+        values.put(RssiDB.PROBABILITY, "3.99941387850341E-38");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-18");
+        values.put(RssiDB.PROBABILITY, "5.30634406957608E-41");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-17");
+        values.put(RssiDB.PROBABILITY, "5.48303279694486E-44");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:03");
+        values.put(RssiDB.RSSI_VALUE,  "-16");
+        values.put(RssiDB.PROBABILITY, "4.41237748729741E-47");
+        db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
+        values = new ContentValues();
 
 
 
 
     }
-    private void insertTrainingData(SQLiteDatabase db){
 
-        ContentValues values = new ContentValues();
-
-    }
     private void insertDataC1(SQLiteDatabase db)
     {
         /******************************************************************************/
@@ -1537,6 +4084,516 @@ public class RssiDB extends SQLiteOpenHelper {
         /******************************************************************************/
         /******************************************************************************/
         ContentValues values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-100");
+        values.put(RssiDB.PROBABILITY, "5.77168614834282E-07");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-99");
+        values.put(RssiDB.PROBABILITY, "3.28670764303345E-06");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-98");
+        values.put(RssiDB.PROBABILITY, "1.64172853288354E-05");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-97");
+        values.put(RssiDB.PROBABILITY, "7.19322295388541E-05");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-96");
+        values.put(RssiDB.PROBABILITY, "0.000276457006121763");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-95");
+        values.put(RssiDB.PROBABILITY, "0.000931995002098505");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-94");
+        values.put(RssiDB.PROBABILITY, "0.00275601432197968");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-93");
+        values.put(RssiDB.PROBABILITY, "0.00714876894698382");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-92");
+        values.put(RssiDB.PROBABILITY, "0.0162653328460803");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-91");
+        values.put(RssiDB.PROBABILITY, "0.03246209564585");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-90");
+        values.put(RssiDB.PROBABILITY, "0.0568292670658764");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-89");
+        values.put(RssiDB.PROBABILITY, "0.087266882306302");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-88");
+        values.put(RssiDB.PROBABILITY, "0.117546247702178");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-87");
+        values.put(RssiDB.PROBABILITY, "0.138883286029366");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-86");
+        values.put(RssiDB.PROBABILITY, "0.143937216746904");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-85");
+        values.put(RssiDB.PROBABILITY, "0.130851324081649");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-84");
+        values.put(RssiDB.PROBABILITY, "0.104343414990438");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-83");
+        values.put(RssiDB.PROBABILITY, "0.0729850441272195");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-82");
+        values.put(RssiDB.PROBABILITY, "0.0447800534174925");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-81");
+        values.put(RssiDB.PROBABILITY, "0.0241000111489718");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-80");
+        values.put(RssiDB.PROBABILITY, "0.0113771054514927");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-79");
+        values.put(RssiDB.PROBABILITY, "0.00471116404952652");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-78");
+        values.put(RssiDB.PROBABILITY, "0.00171122286620815");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-77");
+        values.put(RssiDB.PROBABILITY, "0.000545213783004444");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-76");
+        values.put(RssiDB.PROBABILITY, "0.000152373337950323");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-75");
+        values.put(RssiDB.PROBABILITY, "3.73536495979827E-05");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-74");
+        values.put(RssiDB.PROBABILITY, "8.03228303390176E-06");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-73");
+        values.put(RssiDB.PROBABILITY, "1.51504966581236E-06");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-72");
+        values.put(RssiDB.PROBABILITY, "2.50666698137436E-07");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-71");
+        values.put(RssiDB.PROBABILITY, "3.63787954284333E-08");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-70");
+        values.put(RssiDB.PROBABILITY, "4.63107583464764E-09");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-69");
+        values.put(RssiDB.PROBABILITY, "5.17127191716765E-10");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-68");
+        values.put(RssiDB.PROBABILITY, "5.06517856362712E-11");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-67");
+        values.put(RssiDB.PROBABILITY, "4.35185132328243E-12");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-66");
+        values.put(RssiDB.PROBABILITY, "3.2797084817457E-13");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-65");
+        values.put(RssiDB.PROBABILITY, "2.16809516069167E-14");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-64");
+        values.put(RssiDB.PROBABILITY, "1.25719701435138E-15");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-63");
+        values.put(RssiDB.PROBABILITY, "6.39455380074934E-17");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-62");
+        values.put(RssiDB.PROBABILITY, "2.85298214816959E-18");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-61");
+        values.put(RssiDB.PROBABILITY, "1.11652838003673E-19");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-60");
+        values.put(RssiDB.PROBABILITY, "3.83285493609809E-21");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-59");
+        values.put(RssiDB.PROBABILITY, "1.15413577336953E-22");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-58");
+        values.put(RssiDB.PROBABILITY, "3.04840963965668E-24");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-57");
+        values.put(RssiDB.PROBABILITY, "7.06271454784016E-26");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-56");
+        values.put(RssiDB.PROBABILITY, "1.43533040646477E-27");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-55");
+        values.put(RssiDB.PROBABILITY, "2.55866848707277E-29");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-54");
+        values.put(RssiDB.PROBABILITY, "4.00090334133107E-31");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-53");
+        values.put(RssiDB.PROBABILITY, "5.48761964389743E-33");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-52");
+        values.put(RssiDB.PROBABILITY, "6.60224822732885E-35");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-51");
+        values.put(RssiDB.PROBABILITY, "6.96757414659458E-37");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-50");
+        values.put(RssiDB.PROBABILITY, "6.44990403785269E-39");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-49");
+        values.put(RssiDB.PROBABILITY, "5.23729227716513E-41");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-48");
+        values.put(RssiDB.PROBABILITY, "3.73028722567698E-43");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-47");
+        values.put(RssiDB.PROBABILITY, "2.33055651382842E-45");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-46");
+        values.put(RssiDB.PROBABILITY, "1.27719999466299E-47");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-45");
+        values.put(RssiDB.PROBABILITY, "6.13960005455555E-50");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-44");
+        values.put(RssiDB.PROBABILITY, "2.5888277684311E-52");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-43");
+        values.put(RssiDB.PROBABILITY, "9.57520628756299E-55");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-42");
+        values.put(RssiDB.PROBABILITY, "3.10652622185208E-57");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-41");
+        values.put(RssiDB.PROBABILITY, "8.84064216268477E-60");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-40");
+        values.put(RssiDB.PROBABILITY, "2.20685858474681E-62");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-39");
+        values.put(RssiDB.PROBABILITY, "4.83222447371559E-65");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-38");
+        values.put(RssiDB.PROBABILITY, "9.28114591280952E-68");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-37");
+        values.put(RssiDB.PROBABILITY, "1.56364443714919E-70");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-36");
+        values.put(RssiDB.PROBABILITY, "2.31076782394269E-73");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-35");
+        values.put(RssiDB.PROBABILITY, "2.99541170769189E-76");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-34");
+        values.put(RssiDB.PROBABILITY, "3.40595290070577E-79");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-33");
+        values.put(RssiDB.PROBABILITY, "3.39705561446965E-82");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-32");
+        values.put(RssiDB.PROBABILITY, "2.97199845720048E-85");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-31");
+        values.put(RssiDB.PROBABILITY, "2.28074329173431E-88");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-30");
+        values.put(RssiDB.PROBABILITY, "1.53527485310851E-91");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-29");
+        values.put(RssiDB.PROBABILITY, "9.06520794266572E-95");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-28");
+        values.put(RssiDB.PROBABILITY, "4.6951698594702E-98");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-27");
+        values.put(RssiDB.PROBABILITY, "2.13307806772484E-101");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-26");
+        values.put(RssiDB.PROBABILITY, "8.50049264404691E-105");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-25");
+        values.put(RssiDB.PROBABILITY, "2.97141523162739E-108");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-24");
+        values.put(RssiDB.PROBABILITY, "9.11096752005351E-112");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-23");
+        values.put(RssiDB.PROBABILITY, "2.45045964833187E-115");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-22");
+        values.put(RssiDB.PROBABILITY, "5.78112708116369E-119");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-21");
+        values.put(RssiDB.PROBABILITY, "1.19635310410251E-122");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-20");
+        values.put(RssiDB.PROBABILITY, "2.17164158373612E-126");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-19");
+        values.put(RssiDB.PROBABILITY, "3.45779165120366E-130");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-18");
+        values.put(RssiDB.PROBABILITY, "4.82938020185081E-134");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-17");
+        values.put(RssiDB.PROBABILITY, "5.91651373696124E-138");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "00:0e:a6:27:4d:fb");
+        values.put(RssiDB.RSSI_VALUE,  "-16");
+        values.put(RssiDB.PROBABILITY, "6.35802543302717E-142");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
 
         values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:06");
         values.put(RssiDB.RSSI_VALUE,  "-100");
@@ -1678,6 +4735,7 @@ public class RssiDB extends SQLiteOpenHelper {
 
         values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:06");
         values.put(RssiDB.RSSI_VALUE,  "-77");
+
         values.put(RssiDB.PROBABILITY, "2.86471116879169E-30");
         db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
         values = new ContentValues();
@@ -2045,6 +5103,1029 @@ public class RssiDB extends SQLiteOpenHelper {
         values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:06");
         values.put(RssiDB.RSSI_VALUE,  "-16");
         values.put(RssiDB.PROBABILITY, "1.02470336096328E-17");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-100");
+        values.put(RssiDB.PROBABILITY, "2.16389924153176E-61");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-99");
+        values.put(RssiDB.PROBABILITY, "2.63667694273626E-59");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-98");
+        values.put(RssiDB.PROBABILITY, "2.94990641733583E-57");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-97");
+        values.put(RssiDB.PROBABILITY, "3.03033740465722E-55");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-96");
+        values.put(RssiDB.PROBABILITY, "2.85828259647857E-53");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-95");
+        values.put(RssiDB.PROBABILITY, "2.4754307074656E-51");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-94");
+        values.put(RssiDB.PROBABILITY, "1.96846552737698E-49");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-93");
+        values.put(RssiDB.PROBABILITY, "1.43726312684939E-47");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-92");
+        values.put(RssiDB.PROBABILITY, "9.63554279561341E-46");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-91");
+        values.put(RssiDB.PROBABILITY, "5.93126756651159E-44");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-90");
+        values.put(RssiDB.PROBABILITY, "3.35235712785506E-42");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-89");
+        values.put(RssiDB.PROBABILITY, "1.73974048738449E-40");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-88");
+        values.put(RssiDB.PROBABILITY, "8.28991530705283E-39");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-87");
+        values.put(RssiDB.PROBABILITY, "3.62699659085088E-37");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-86");
+        values.put(RssiDB.PROBABILITY, "1.45705394692583E-35");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-85");
+        values.put(RssiDB.PROBABILITY, "5.37446880628267E-34");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-84");
+        values.put(RssiDB.PROBABILITY, "1.82023261594176E-32");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-83");
+        values.put(RssiDB.PROBABILITY, "5.66043318085078E-31");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-82");
+        values.put(RssiDB.PROBABILITY, "1.616232645902E-29");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-81");
+        values.put(RssiDB.PROBABILITY, "4.23730291633472E-28");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-80");
+        values.put(RssiDB.PROBABILITY, "1.02001505019244E-26");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-79");
+        values.put(RssiDB.PROBABILITY, "2.25452511777688E-25");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-78");
+        values.put(RssiDB.PROBABILITY, "4.57546257245866E-24");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-77");
+        values.put(RssiDB.PROBABILITY, "8.52602038580468E-23");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-76");
+        values.put(RssiDB.PROBABILITY, "1.45877783816978E-21");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-75");
+        values.put(RssiDB.PROBABILITY, "2.29172961830645E-20");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-74");
+        values.put(RssiDB.PROBABILITY, "3.30574255811799E-19");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-73");
+        values.put(RssiDB.PROBABILITY, "4.37830599677546E-18");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-72");
+        values.put(RssiDB.PROBABILITY, "5.32444840912387E-17");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-71");
+        values.put(RssiDB.PROBABILITY, "5.94531084739239E-16");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-70");
+        values.put(RssiDB.PROBABILITY, "6.0954523424099E-15");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-69");
+        values.put(RssiDB.PROBABILITY, "5.73810834664797E-14");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-68");
+        values.put(RssiDB.PROBABILITY, "4.95978646553604E-13");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-67");
+        values.put(RssiDB.PROBABILITY, "3.93630411807988E-12");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-66");
+        values.put(RssiDB.PROBABILITY, "2.86843980525881E-11");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-65");
+        values.put(RssiDB.PROBABILITY, "1.91926201095783E-10");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-64");
+        values.put(RssiDB.PROBABILITY, "1.17910973311872E-09");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-63");
+        values.put(RssiDB.PROBABILITY, "6.65128583962647E-09");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-62");
+        values.put(RssiDB.PROBABILITY, "3.4449936872358E-08");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-61");
+        values.put(RssiDB.PROBABILITY, "1.63833488719473E-07");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-60");
+        values.put(RssiDB.PROBABILITY, "7.15399049608878E-07");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-59");
+        values.put(RssiDB.PROBABILITY, "2.86830591795649E-06");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-58");
+        values.put(RssiDB.PROBABILITY, "1.05592727896033E-05");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-57");
+        values.put(RssiDB.PROBABILITY, "3.56922544911965E-05");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-56");
+        values.put(RssiDB.PROBABILITY, "0.000110775924388602");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-55");
+        values.put(RssiDB.PROBABILITY, "0.00031568083394524");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-54");
+        values.put(RssiDB.PROBABILITY, "0.000826004623433061");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-53");
+        values.put(RssiDB.PROBABILITY, "0.00198448660501537");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-52");
+        values.put(RssiDB.PROBABILITY, "0.00437769293993196");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-51");
+        values.put(RssiDB.PROBABILITY, "0.00886694165521439");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-50");
+        values.put(RssiDB.PROBABILITY, "0.0164905004670179");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-49");
+        values.put(RssiDB.PROBABILITY, "0.0281595202886392");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-48");
+        values.put(RssiDB.PROBABILITY, "0.0441517679620008");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-47");
+        values.put(RssiDB.PROBABILITY, "0.0635627057059228");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-46");
+        values.put(RssiDB.PROBABILITY, "0.0840210459194604");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-45");
+        values.put(RssiDB.PROBABILITY, "0.101977702129093");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-44");
+        values.put(RssiDB.PROBABILITY, "0.113645904791913");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-43");
+        values.put(RssiDB.PROBABILITY, "0.116287702459889");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-42");
+        values.put(RssiDB.PROBABILITY, "0.109255980811602");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-41");
+        values.put(RssiDB.PROBABILITY, "0.0942514587838406");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-40");
+        values.put(RssiDB.PROBABILITY, "0.0746555968662395");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-39");
+        values.put(RssiDB.PROBABILITY, "0.0542960322032041");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-38");
+        values.put(RssiDB.PROBABILITY, "0.03625811700876");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-37");
+        values.put(RssiDB.PROBABILITY, "0.0222317591650792");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-36");
+        values.put(RssiDB.PROBABILITY, "0.0125162388610644");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-35");
+        values.put(RssiDB.PROBABILITY, "0.00647001498919759");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-34");
+        values.put(RssiDB.PROBABILITY, "0.00307091758643665");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-33");
+        values.put(RssiDB.PROBABILITY, "0.00133832769995878");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-32");
+        values.put(RssiDB.PROBABILITY, "0.000535535423243905");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-31");
+        values.put(RssiDB.PROBABILITY, "0.000196763876084015");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-30");
+        values.put(RssiDB.PROBABILITY, "6.63794983933231E-05");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-29");
+        values.put(RssiDB.PROBABILITY, "2.0561462117032E-05");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-28");
+        values.put(RssiDB.PROBABILITY, "5.84797425674759E-06");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-27");
+        values.put(RssiDB.PROBABILITY, "1.52717336475044E-06");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-26");
+        values.put(RssiDB.PROBABILITY, "3.66186779104552E-07");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-25");
+        values.put(RssiDB.PROBABILITY, "8.06210426312648E-08");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-24");
+        values.put(RssiDB.PROBABILITY, "1.62976726682683E-08");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-23");
+        values.put(RssiDB.PROBABILITY, "3.02506145639413E-09");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-22");
+        values.put(RssiDB.PROBABILITY, "5.15554098645765E-10");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-21");
+        values.put(RssiDB.PROBABILITY, "8.06762524279019E-11");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-20");
+        values.put(RssiDB.PROBABILITY, "1.15917396698985E-11");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-19");
+        values.put(RssiDB.PROBABILITY, "1.52926571676778E-12");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-18");
+        values.put(RssiDB.PROBABILITY, "1.85245947787691E-13");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-17");
+        values.put(RssiDB.PROBABILITY, "2.0603732906537E-14");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:00");
+        values.put(RssiDB.RSSI_VALUE,  "-16");
+        values.put(RssiDB.PROBABILITY, "2.1041395355805E-15");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-100");
+        values.put(RssiDB.PROBABILITY, "1.50248390082328E-15");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-99");
+        values.put(RssiDB.PROBABILITY, "1.12817594167597E-14");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-98");
+        values.put(RssiDB.PROBABILITY, "7.93089202149851E-14");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-97");
+        values.put(RssiDB.PROBABILITY, "5.21969871363251E-13");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-96");
+        values.put(RssiDB.PROBABILITY, "3.21622949567316E-12");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-95");
+        values.put(RssiDB.PROBABILITY, "1.85535415460953E-11");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-94");
+        values.put(RssiDB.PROBABILITY, "1.00203942152515E-10");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-93");
+        values.put(RssiDB.PROBABILITY, "5.06665099584135E-10");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-92");
+        values.put(RssiDB.PROBABILITY, "2.39847595129832E-09");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-91");
+        values.put(RssiDB.PROBABILITY, "1.06298697371092E-08");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-90");
+        values.put(RssiDB.PROBABILITY, "4.41061055728257E-08");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-89");
+        values.put(RssiDB.PROBABILITY, "1.71335627199944E-07");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-88");
+        values.put(RssiDB.PROBABILITY, "6.23124519362157E-07");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-87");
+        values.put(RssiDB.PROBABILITY, "2.12168154380647E-06");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-86");
+        values.put(RssiDB.PROBABILITY, "6.76337942995895E-06");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-85");
+        values.put(RssiDB.PROBABILITY, "2.01848488666864E-05");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-84");
+        values.put(RssiDB.PROBABILITY, "5.63982265292513E-05");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-83");
+        values.put(RssiDB.PROBABILITY, "0.000147531102901943");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-82");
+        values.put(RssiDB.PROBABILITY, "0.000361309954054996");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-81");
+        values.put(RssiDB.PROBABILITY, "0.000828427409922534");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-80");
+        values.put(RssiDB.PROBABILITY, "0.00177830884688677");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-79");
+        values.put(RssiDB.PROBABILITY, "0.00357386476020304");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-78");
+        values.put(RssiDB.PROBABILITY, "0.00672430238910214");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-77");
+        values.put(RssiDB.PROBABILITY, "0.01184498601251");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-76");
+        values.put(RssiDB.PROBABILITY, "0.0195343994912289");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-75");
+        values.put(RssiDB.PROBABILITY, "0.0301608636882701");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-74");
+        values.put(RssiDB.PROBABILITY, "0.0435979108052567");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-73");
+        values.put(RssiDB.PROBABILITY, "0.0590018703794777");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-72");
+        values.put(RssiDB.PROBABILITY, "0.0747556592302413");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-71");
+        values.put(RssiDB.PROBABILITY, "0.0886748715541821");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-70");
+        values.put(RssiDB.PROBABILITY, "0.0984771012676044");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-69");
+        values.put(RssiDB.PROBABILITY, "0.1023877833055");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-68");
+        values.put(RssiDB.PROBABILITY, "0.0996642081988535");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-67");
+        values.put(RssiDB.PROBABILITY, "0.090825646282361");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-66");
+        values.put(RssiDB.PROBABILITY, "0.0774918392325052");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-65");
+        values.put(RssiDB.PROBABILITY, "0.0618987154821184");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-64");
+        values.put(RssiDB.PROBABILITY, "0.046289820898949");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-63");
+        values.put(RssiDB.PROBABILITY, "0.0324091439754341");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-62");
+        values.put(RssiDB.PROBABILITY, "0.0212435853417763");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-61");
+        values.put(RssiDB.PROBABILITY, "0.0130366578419203");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-60");
+        values.put(RssiDB.PROBABILITY, "0.00749001891879343");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-59");
+        values.put(RssiDB.PROBABILITY, "0.0040288190132251");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-58");
+        values.put(RssiDB.PROBABILITY, "0.00202885400793047");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-57");
+        values.put(RssiDB.PROBABILITY, "0.000956537569717911");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-56");
+        values.put(RssiDB.PROBABILITY, "0.000422212866109183");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-55");
+        values.put(RssiDB.PROBABILITY, "0.000174477363640095");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-54");
+        values.put(RssiDB.PROBABILITY, "6.75032858251159E-05");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-53");
+        values.put(RssiDB.PROBABILITY, "2.44505668516162E-05");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-52");
+        values.put(RssiDB.PROBABILITY, "8.29146261242358E-06");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-51");
+        values.put(RssiDB.PROBABILITY, "2.63239803157849E-06");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-50");
+        values.put(RssiDB.PROBABILITY, "7.82438413635028E-07");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-49");
+        values.put(RssiDB.PROBABILITY, "2.17734358580562E-07");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-48");
+        values.put(RssiDB.PROBABILITY, "5.67259744017903E-08");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-47");
+        values.put(RssiDB.PROBABILITY, "1.38361467269643E-08");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-46");
+        values.put(RssiDB.PROBABILITY, "3.15955957817801E-09");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-45");
+        values.put(RssiDB.PROBABILITY, "6.75485662115852E-10");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-44");
+        values.put(RssiDB.PROBABILITY, "1.3520224937626E-10");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-43");
+        values.put(RssiDB.PROBABILITY, "2.53355242318842E-11");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-42");
+        values.put(RssiDB.PROBABILITY, "4.44481887956096E-12");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-41");
+        values.put(RssiDB.PROBABILITY, "7.30056443555762E-13");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-40");
+        values.put(RssiDB.PROBABILITY, "1.12263093156492E-13");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-39");
+        values.put(RssiDB.PROBABILITY, "1.61620246784502E-14");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-38");
+        values.put(RssiDB.PROBABILITY, "2.17837539523133E-15");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-37");
+        values.put(RssiDB.PROBABILITY, "2.74882996446131E-16");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-36");
+        values.put(RssiDB.PROBABILITY, "3.24744067169478E-17");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-35");
+        values.put(RssiDB.PROBABILITY, "3.59180516591083E-18");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-34");
+        values.put(RssiDB.PROBABILITY, "3.71931114771404E-19");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-33");
+        values.put(RssiDB.PROBABILITY, "3.60570713083266E-20");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-32");
+        values.put(RssiDB.PROBABILITY, "3.27262754676217E-21");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-31");
+        values.put(RssiDB.PROBABILITY, "2.78087143110672E-22");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-30");
+        values.put(RssiDB.PROBABILITY, "2.21229702419588E-23");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-29");
+        values.put(RssiDB.PROBABILITY, "1.64772281735216E-24");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-28");
+        values.put(RssiDB.PROBABILITY, "1.14895513984664E-25");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-27");
+        values.put(RssiDB.PROBABILITY, "7.50067217773234E-27");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-26");
+        values.put(RssiDB.PROBABILITY, "4.58432599487894E-28");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-25");
+        values.put(RssiDB.PROBABILITY, "2.62318546537288E-29");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-24");
+        values.put(RssiDB.PROBABILITY, "1.40527298507073E-30");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-23");
+        values.put(RssiDB.PROBABILITY, "7.04807624474251E-32");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-22");
+        values.put(RssiDB.PROBABILITY, "3.30947180536929E-33");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-21");
+        values.put(RssiDB.PROBABILITY, "1.45487262893647E-34");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-20");
+        values.put(RssiDB.PROBABILITY, "5.98782993631847E-36");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-19");
+        values.put(RssiDB.PROBABILITY, "2.30723662416852E-37");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-18");
+        values.put(RssiDB.PROBABILITY, "8.32325140063433E-39");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-17");
+        values.put(RssiDB.PROBABILITY, "2.81107274254753E-40");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d6");
+        values.put(RssiDB.RSSI_VALUE,  "-16");
+        values.put(RssiDB.PROBABILITY, "8.88851790285308E-42");
         db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
         values = new ContentValues();
 
@@ -2557,6 +6638,518 @@ public class RssiDB extends SQLiteOpenHelper {
         values.put(RssiDB.PROBABILITY, "2.86449767111201E-21");
         db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
         values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-100");
+        values.put(RssiDB.PROBABILITY, "1.22594415579728E-13");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-99");
+        values.put(RssiDB.PROBABILITY, "6.98787505849251E-13");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-98");
+        values.put(RssiDB.PROBABILITY, "3.76183564361951E-12");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-97");
+        values.put(RssiDB.PROBABILITY, "1.91264665399296E-11");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-96");
+        values.put(RssiDB.PROBABILITY, "9.1843815005148E-11");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-95");
+        values.put(RssiDB.PROBABILITY, "4.16529080275341E-10");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-94");
+        values.put(RssiDB.PROBABILITY, "1.78410734747082E-09");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-93");
+        values.put(RssiDB.PROBABILITY, "7.2173352380635E-09");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-92");
+        values.put(RssiDB.PROBABILITY, "2.75748410051669E-08");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-91");
+        values.put(RssiDB.PROBABILITY, "9.95014473031299E-08");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-90");
+        values.put(RssiDB.PROBABILITY, "3.39098618797159E-07");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-89");
+        values.put(RssiDB.PROBABILITY, "1.09144758929669E-06");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-88");
+        values.put(RssiDB.PROBABILITY, "3.31787479508808E-06");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-87");
+        values.put(RssiDB.PROBABILITY, "9.52570971352767E-06");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-86");
+        values.put(RssiDB.PROBABILITY, "2.58294366574136E-05");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-85");
+        values.put(RssiDB.PROBABILITY, "6.61473984145049E-05");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-84");
+        values.put(RssiDB.PROBABILITY, "0.000159989265239774");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-83");
+        values.put(RssiDB.PROBABILITY, "0.000365467836181735");
+
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-82");
+        values.put(RssiDB.PROBABILITY, "0.000788474626521867");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-81");
+        values.put(RssiDB.PROBABILITY, "0.00160659541946539");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-80");
+        values.put(RssiDB.PROBABILITY, "0.00309175853881965");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-79");
+        values.put(RssiDB.PROBABILITY, "0.00561933411926076");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-78");
+        values.put(RssiDB.PROBABILITY, "0.00964593618233644");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-77");
+        values.put(RssiDB.PROBABILITY, "0.0156381060947404");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-76");
+        values.put(RssiDB.PROBABILITY, "0.0239444115423022");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-75");
+        values.put(RssiDB.PROBABILITY, "0.0346261673378845");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-74");
+        values.put(RssiDB.PROBABILITY, "0.0472916994505344");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-73");
+        values.put(RssiDB.PROBABILITY, "0.061002222838238");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-72");
+        values.put(RssiDB.PROBABILITY, "0.0743167385548065");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-71");
+        values.put(RssiDB.PROBABILITY, "0.0855082199881145");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-70");
+        values.put(RssiDB.PROBABILITY, "0.0929200279687444");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-69");
+        values.put(RssiDB.PROBABILITY, "0.095365445069401");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-68");
+        values.put(RssiDB.PROBABILITY, "0.0924385214255819");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-67");
+        values.put(RssiDB.PROBABILITY, "0.084624318190132");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-66");
+        values.put(RssiDB.PROBABILITY, "0.0731673990776954");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-65");
+        values.put(RssiDB.PROBABILITY, "0.0597475764891995");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-64");
+        values.put(RssiDB.PROBABILITY, "0.0460790177452134");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-63");
+        values.put(RssiDB.PROBABILITY, "0.0335634328452982");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-62");
+        values.put(RssiDB.PROBABILITY, "0.0230892473853768");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-61");
+        values.put(RssiDB.PROBABILITY, "0.0150014563353787");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-60");
+        values.put(RssiDB.PROBABILITY, "0.00920528649810985");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-59");
+        values.put(RssiDB.PROBABILITY, "0.00533484049741062");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-58");
+        values.put(RssiDB.PROBABILITY, "0.00292001989906255");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-57");
+        values.put(RssiDB.PROBABILITY, "0.00150949064186889");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-56");
+        values.put(RssiDB.PROBABILITY, "0.000736979285180418");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-55");
+        values.put(RssiDB.PROBABILITY, "0.000339828954361805");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-54");
+        values.put(RssiDB.PROBABILITY, "0.000147994548991925");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-53");
+        values.put(RssiDB.PROBABILITY, "6.08711213170479E-05");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-52");
+        values.put(RssiDB.PROBABILITY, "2.36459695877818E-05");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-51");
+        values.put(RssiDB.PROBABILITY, "8.67527386082521E-06");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-50");
+        values.put(RssiDB.PROBABILITY, "3.00600364191398E-06");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-49");
+        values.put(RssiDB.PROBABILITY, "9.83730311681794E-07");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-48");
+        values.put(RssiDB.PROBABILITY, "3.04048487087455E-07");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-47");
+        values.put(RssiDB.PROBABILITY, "8.87543979007827E-08");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-46");
+        values.put(RssiDB.PROBABILITY, "2.44690528898109E-08");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-45");
+        values.put(RssiDB.PROBABILITY, "6.37125048074068E-09");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-44");
+        values.put(RssiDB.PROBABILITY, "1.56679595335468E-09");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-43");
+        values.put(RssiDB.PROBABILITY, "3.63898650631946E-10");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-42");
+        values.put(RssiDB.PROBABILITY, "7.98231186260491E-11");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-41");
+        values.put(RssiDB.PROBABILITY, "1.65370172570135E-11");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-40");
+        values.put(RssiDB.PROBABILITY, "3.23568257427953E-12");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-39");
+        values.put(RssiDB.PROBABILITY, "5.97936248913686E-13");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-38");
+        values.put(RssiDB.PROBABILITY, "1.0435760351775E-13");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-37");
+        values.put(RssiDB.PROBABILITY, "1.72017865438136E-14");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-36");
+        values.put(RssiDB.PROBABILITY, "2.67795486643725E-15");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-35");
+        values.put(RssiDB.PROBABILITY, "3.93743315948504E-16");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-34");
+        values.put(RssiDB.PROBABILITY, "5.46768363235689E-17");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-33");
+        values.put(RssiDB.PROBABILITY, "7.17090226252139E-18");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-32");
+        values.put(RssiDB.PROBABILITY, "8.88228023189863E-19");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-31");
+        values.put(RssiDB.PROBABILITY, "1.03909530042499E-19");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-30");
+        values.put(RssiDB.PROBABILITY, "1.148065146262E-20");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-29");
+        values.put(RssiDB.PROBABILITY, "1.19800305794843E-21");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-28");
+        values.put(RssiDB.PROBABILITY, "1.18067281256589E-22");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-27");
+        values.put(RssiDB.PROBABILITY, "1.09895887636376E-23");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-26");
+        values.put(RssiDB.PROBABILITY, "9.66081046320229E-25");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-25");
+        values.put(RssiDB.PROBABILITY, "8.02095212901819E-26");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-24");
+        values.put(RssiDB.PROBABILITY, "6.28953486907037E-27");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-23");
+        values.put(RssiDB.PROBABILITY, "4.65791303840368E-28");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-22");
+        values.put(RssiDB.PROBABILITY, "3.25795037798506E-29");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-21");
+        values.put(RssiDB.PROBABILITY, "2.15217606180061E-30");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-20");
+        values.put(RssiDB.PROBABILITY, "1.34273827868798E-31");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-19");
+        values.put(RssiDB.PROBABILITY, "7.91198008584541E-33");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-18");
+        values.put(RssiDB.PROBABILITY, "4.4031070385974E-34");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-17");
+        values.put(RssiDB.PROBABILITY, "2.31426742856047E-35");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
+        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:37:d0");
+        values.put(RssiDB.RSSI_VALUE,  "-16");
+        values.put(RssiDB.PROBABILITY, "1.14880967663203E-36");
+        db.insert(RssiDB.TABLE_C1_TRAINING, null, values);
+        values = new ContentValues();
+
 
 
     }
@@ -38033,90 +42626,84 @@ public class RssiDB extends SQLiteOpenHelper {
         db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
         values = new ContentValues();
 
-
-
-
-
-
-
-       // values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:39:10");
+        values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:39:10");
         db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
         values = new ContentValues();
 
-      //  values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:39:13");
+        values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:39:13");
         db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
         values = new ContentValues();
 
-        // values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:39:16");
+        values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:39:16");
         db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
         values = new ContentValues();
 
 
-        //  values.put(RssiDB.SSID_VALUE, "00:1b:90:76:d3:f0");
+          values.put(RssiDB.SSID_VALUE, "00:1b:90:76:d3:f0");
         db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
         values = new ContentValues();
 
-        //  values.put(RssiDB.SSID_VALUE, "00:1b:90:76:d3:f3");
+         values.put(RssiDB.SSID_VALUE, "00:1b:90:76:d3:f3");
         db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
         values = new ContentValues();
 
-        //  values.put(RssiDB.SSID_VALUE, "00:1b:90:76:d3:f4");
+        values.put(RssiDB.SSID_VALUE, "00:1b:90:76:d3:f4");
         db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
         values = new ContentValues();
 
-        //  values.put(RssiDB.SSID_VALUE, "00:1b:90:76:d3:f6");
-        db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
-        values = new ContentValues();
-
-
-        //  values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:37:d6");
-        db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
-        values = new ContentValues();
-
-        //  values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:37:d4");
-        db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
-        values = new ContentValues();
-
-        //   values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:37:d0");
-        db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
-        values = new ContentValues();
-
-        //values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:37:06");
+          values.put(RssiDB.SSID_VALUE, "00:1b:90:76:d3:f6");
         db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
         values = new ContentValues();
 
 
-        //  values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:28:00");
+         values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:37:d6");
         db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
         values = new ContentValues();
 
-        //  values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:28:03");
+          values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:37:d4");
         db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
         values = new ContentValues();
 
-        //  values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:28:04");
+         values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:37:d0");
         db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
         values = new ContentValues();
 
-        //  values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:28:06");
+        values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:37:06");
         db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
         values = new ContentValues();
 
-        //   values.put(RssiDB.SSID_VALUE, "00:1b:90:76:ce:16");
+
+          values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:28:00");
         db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
         values = new ContentValues();
 
-        //  values.put(RssiDB.SSID_VALUE, "00:1b:90:76:ce:14");
+          values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:28:03");
         db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
         values = new ContentValues();
 
-        //  values.put(RssiDB.SSID_VALUE, "00:1b:90:76:ce:13");
+          values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:28:04");
         db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
         values = new ContentValues();
 
-        //+  values.put(RssiDB.SSID_VALUE, "00:1b:90:76:ce:10");
+         values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:28:06");
         db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
         values = new ContentValues();
+
+          values.put(RssiDB.SSID_VALUE, "00:1b:90:76:ce:16");
+        db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
+        values = new ContentValues();
+
+          values.put(RssiDB.SSID_VALUE, "00:1b:90:76:ce:14");
+        db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
+        values = new ContentValues();
+
+         values.put(RssiDB.SSID_VALUE, "00:1b:90:76:ce:13");
+        db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
+        values = new ContentValues();
+
+       /* values.put(RssiDB.SSID_VALUE, "00:1b:90:76:ce:10");
+        db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
+        values = new ContentValues();*/
 
 
     }

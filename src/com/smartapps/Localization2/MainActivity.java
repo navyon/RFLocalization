@@ -81,7 +81,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private static Map<String, HashMap<Integer, Float>> cell16;
     private static Map<String, HashMap<Integer, Float>> cell17;
 
-    private static ArrayList<RFClass> test;
+
 
     private static final int NR_CELLS = 17;
     //bayesian main variables
@@ -92,7 +92,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private boolean btn1Used, btn2Used, btn3Used, btn4Used, btn5Used, btn6Used, btn7Used, btn8Used, btn9Used, btn10Used, btn11Used,btn12Used, btn13Used, btn14Used, btn15Used, btn16Used, btn17Used;
     private TextView txtviewwifi;
     private List<ScanResult> wifiList;
-    private ArrayList<RFClass> rfTestData;
+    private ArrayList<RFClass> rfTestData = new ArrayList<RFClass>();
 
     //private enum ButtonClicked{
     //    btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn10, btn11, btn12, btn13, btn14, btn15, btn16, btn17
@@ -105,9 +105,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+
+
         //Initializations (data and bayesian algorithm's variables)
         posterior = new float [NR_CELLS];
-        //prior =  initiatePrior();
+        prior =  initiatePrior();
 
         this.datasource = new RssiDataSource(this);
         this.datasource.open();
@@ -165,7 +167,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
 
         //  Print data
-       /* Iterator entries = cell1.entrySet().iterator();
+        /*Iterator entries = cell1.entrySet().iterator();
         while (entries.hasNext()) {
             Map.Entry thisEntry = (Map.Entry) entries.next();
             String key = (String)thisEntry.getKey();
@@ -178,8 +180,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 Object value2 = leEntry.getValue();
                 System.out.println("           Rssi "+ key2 + " PROBABILITY " + value2);
             }
-        }
-*/
+        }*/
 
 
         //BUTTONS
@@ -194,8 +195,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
 
 
-     rfTestData  = new ArrayList<RFClass>();
-     intentFilter.addAction(WifiManager.RSSI_CHANGED_ACTION);
+         rfTestData  = new ArrayList<RFClass>();
+         intentFilter.addAction(WifiManager.RSSI_CHANGED_ACTION);
 
 
     }
@@ -286,7 +287,114 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
             case R.id.btnsensenew:
                  clearLocationPoints();
-                 registerReceiver(myRssiChangeReceiver, intentFilter);
+                // registerReceiver(myRssiChangeReceiver, intentFilter);
+               // Cell 1
+               /* RFClass rftest1 = new RFClass(-89,"00:0e:a6:27:4d:fb");
+                RFClass rftest2 = new RFClass(-60,"1c:aa:07:7b:28:06");
+                RFClass rftest3 = new RFClass(-49,"1c:aa:07:7b:28:00");
+                RFClass rftest4 = new RFClass(-76,"1c:aa:07:7b:37:d6");
+                RFClass rftest5 = new RFClass(-65,"1c:aa:07:7b:37:d4");
+                RFClass rftest6 = new RFClass(-87,"00:15:70:ad:99:ca");
+                RFClass rftest7 = new RFClass(-50,"1c:aa:07:7b:28:04");
+                RFClass rftest8 = new RFClass(-77,"1c:aa:07:7b:37:d0");
+                rfTestData.add(rftest1);
+                rfTestData.add(rftest2);
+                rfTestData.add(rftest3);
+                rfTestData.add(rftest4);
+                rfTestData.add(rftest5);
+                rfTestData.add(rftest6);
+                rfTestData.add(rftest7);
+                rfTestData.add(rftest8);*/
+                // Cell 17
+                RFClass rftest1 = new RFClass(-62,"00:1b:90:76:d3:f6");
+                RFClass rftest2 = new RFClass(-76,"5c:96:9d:65:76:8d");
+                RFClass rftest3 = new RFClass(-64,"1c:aa:07:7b:39:10");
+                RFClass rftest4 = new RFClass(-65,"1c:aa:07:7b:39:16");
+                RFClass rftest5 = new RFClass(-74,"1c:aa:07:6e:31:a6");
+                RFClass rftest6 = new RFClass(-69,"1c:aa:07:6e:31:a3");
+                RFClass rftest7 = new RFClass(-62,"00:1b:90:76:d3:f0");
+                RFClass rftest8 = new RFClass(-80,"20:c9:d0:18:43:f3");
+                RFClass rftest9 = new RFClass(-71,"5c:d9:98:e3:e6:c4");
+                RFClass rftest10 = new RFClass(-84,"00:25:9c:ca:87:ee");
+                RFClass rftest11 = new RFClass(-86,"00:26:5a:a9:99:46");
+                RFClass rftest12 = new RFClass(-62,"00:1b:90:76:d3:f0");
+                rfTestData.add(rftest1);
+                rfTestData.add(rftest2);
+                rfTestData.add(rftest3);
+                rfTestData.add(rftest4);
+                rfTestData.add(rftest5);
+                rfTestData.add(rftest6);
+                rfTestData.add(rftest7);
+                rfTestData.add(rftest8);
+                rfTestData.add(rftest9);
+                rfTestData.add(rftest10);
+                rfTestData.add(rftest11);
+                rfTestData.add(rftest12);
+                // Cell4
+               /* RFClass rftest1 = new RFClass(-52,"1c:aa:07:7b:28:06");
+                RFClass rftest2 = new RFClass(-68,"1c:aa:07:7b:37:d6");
+                RFClass rftest3 = new RFClass(-39,"1c:aa:07:7b:39:10");
+                RFClass rftest4 = new RFClass(-66,"1c:aa:07:7b:37:d4");
+                RFClass rftest5 = new RFClass(-91,"00:0e:a6:27:4d:fb");
+                RFClass rftest6 = new RFClass(-52,"1c:aa:07:7b:28:03");
+                RFClass rftest7 = new RFClass(-41,"1c:aa:07:7b:28:04");
+                RFClass rftest8 = new RFClass(-66,"1c:aa:07:7b:37:d0");
+                RFClass rftest9 = new RFClass(-85,"00:15:70:ad:99:ca");
+                RFClass rftest10 = new RFClass(-89,"00:15:70:ad:99:cb");
+                RFClass rftest11 = new RFClass(-52,"1c:aa:07:7b:28:06");
+                RFClass rftest12 = new RFClass(-68,"1c:aa:07:7b:37:d6");
+                rfTestData.add(rftest1);
+                rfTestData.add(rftest2);
+                rfTestData.add(rftest3);
+                rfTestData.add(rftest4);
+                rfTestData.add(rftest5);
+                rfTestData.add(rftest6);
+                rfTestData.add(rftest7);
+                rfTestData.add(rftest8);
+                rfTestData.add(rftest9);
+                rfTestData.add(rftest10);
+                rfTestData.add(rftest11);
+                rfTestData.add(rftest12);*/
+
+                // CELL 5
+               /* RFClass rftest1 = new RFClass(-43,"1c:aa:07:7b:28:06");
+                RFClass rftest2 = new RFClass(-69,"1c:aa:07:7b:37:d6");
+                RFClass rftest3 = new RFClass(-43,"1c:aa:07:7b:28:00");
+                RFClass rftest4 = new RFClass(-42,"1c:aa:07:7b:28:03");
+                RFClass rftest5 = new RFClass(-64,"1c:aa:07:7b:37:d3");
+                RFClass rftest6 = new RFClass(-42,"1c:aa:07:7b:28:04");
+                RFClass rftest7 = new RFClass(-68,"1c:aa:07:7b:37:d0");
+                RFClass rftest8 = new RFClass(-46,"1c:aa:07:7b:28:06");
+                RFClass rftest9 = new RFClass(-75,"1c:aa:07:7b:37:d6");
+                RFClass rftest10 = new RFClass(-50,"1c:aa:07:7b:28:00");
+                RFClass rftest11 = new RFClass(-48,"1c:aa:07:7b:28:04");
+                RFClass rftest12 = new RFClass(-68,"1c:aa:07:7b:37:d0");
+                rfTestData.add(rftest1);
+                rfTestData.add(rftest2);
+                rfTestData.add(rftest3);
+                rfTestData.add(rftest4);
+                rfTestData.add(rftest5);
+                rfTestData.add(rftest6);
+                rfTestData.add(rftest7);
+                rfTestData.add(rftest8);
+                rfTestData.add(rftest9);
+                rfTestData.add(rftest10);
+                rfTestData.add(rftest11);
+                rfTestData.add(rftest12);*/
+                Thread thread = new Thread()
+                {
+                    @Override
+                    public void run() {
+                        try {
+                            startBayesian();
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                };
+                thread.start();
+
+
 
                 break;
 
@@ -333,11 +441,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
            /* StringBuilder lsttext =  new StringBuilder();
             lsttext.append(txtviewwifi.getText()).append("\n").append(sb);
             txtviewwifi.setText(lsttext);*/
-             if(rfTestData.size()>10) {
 
 
-                 startBayesian();
-             }
+
+
+
         }};
 
 
@@ -599,7 +707,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private static float getProbFromCell(Map<String, HashMap<Integer, Float>> cell, String id, int rss){
         if(cell.containsKey(id)){
             if(cell.get(id).containsKey(rss)){
-                return cell.get(id).get(rss);
+
+                float p = cell.get(id).get(rss);
+                return p;
             }
         }
         return 0;
@@ -618,14 +728,14 @@ public class MainActivity extends Activity implements View.OnClickListener {
         float count = 0;
         for(int i=0; i<prob.length; i++)
         {
-            results[i] = (float)prob[i]*prior[i];
+            results[i] = prob[i]*prior[i];
             count += results[i];
 
             System.out.println(i + ". Prob: "+ prob[i] + "  Prior: "+ prior[i] + "  Result: "+ results[i]  + "     Count: " + count);
         }
         System.out.println("\n\n");
         for(int i = 0; i <results.length; i++){
-            if(count!= 0)results[i] = (float)results[i]/count;
+            if(count!= 0)results[i] = results[i]/count;
             System.out.println("Result normalized: "+ results[i]);
         }
 
