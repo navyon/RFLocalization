@@ -83,7 +83,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
 
 
-    private static final int NR_CELLS = 17;
+    private static final int NR_CELLS = 2;
     //bayesian main variables
     float [] posterior;
     float[] prior;
@@ -93,6 +93,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private TextView txtviewwifi;
     private List<ScanResult> wifiList;
     private ArrayList<RFClass> rfTestData = new ArrayList<RFClass>();
+    private ArrayList<CellProb> cellProbList = new ArrayList<CellProb>();
+    private static int counter = 0;
 
     //private enum ButtonClicked{
     //    btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn10, btn11, btn12, btn13, btn14, btn15, btn16, btn17
@@ -109,7 +111,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         //Initializations (data and bayesian algorithm's variables)
         posterior = new float [NR_CELLS];
-        prior =  initiatePrior();
+
 
         this.datasource = new RssiDataSource(this);
         this.datasource.open();
@@ -117,7 +119,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         this.datasource.close();
         this.datasource.open();
         this.cell2 = datasource.getTrainingDataC2();
-        this.datasource.close();
+        this.datasource.close();     /*
         this.datasource.open();
         this.cell3 = datasource.getTrainingDataC3();
         this.datasource.close();
@@ -164,7 +166,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         this.cell17 = datasource.getTrainingDataC17();
         this.datasource.close();
 
-
+                                */
 
         //  Print data
         /*Iterator entries = cell1.entrySet().iterator();
@@ -210,6 +212,65 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 txtviewwifi.setText(stringy);
             }});
     }
+    private void setLocation()
+    {   CellProb cp = cellProbList.get(0);
+        switch (cp.getId()) {
+            case 0:
+                drawLocation(cellspoints[0][0],cellspoints[0][1]);
+                break;
+            case 1:
+                drawLocation(cellspoints[1][0],cellspoints[1][1]);
+                break;
+            case 2:
+                drawLocation(cellspoints[2][0],cellspoints[2][1]);
+                break;
+            case 3:
+                drawLocation(cellspoints[3][0],cellspoints[3][1]);
+                break;
+            case 4:
+                drawLocation(cellspoints[4][0],cellspoints[4][1]);
+                break;
+            case 5:
+                 drawLocation(cellspoints[5][0],cellspoints[5][1]);
+                break;
+            case 6:
+                drawLocation(cellspoints[6][0],cellspoints[6][1]);
+                break;
+            case 7:
+                drawLocation(cellspoints[7][0],cellspoints[7][1]);
+                break;
+            case 8:
+                drawLocation(cellspoints[8][0],cellspoints[8][1]);
+                break;
+            case 9:
+                drawLocation(cellspoints[9][0],cellspoints[9][1]);
+                break;
+            case 10:
+                drawLocation(cellspoints[10][0],cellspoints[10][1]);
+                break;
+            case 11:
+                drawLocation(cellspoints[11][0],cellspoints[11][1]);
+                break;
+            case 12:
+                drawLocation(cellspoints[12][0],cellspoints[12][1]);
+                break;
+            case 13:
+                drawLocation(cellspoints[13][0],cellspoints[13][1]);
+                break;
+            case 14:
+                drawLocation(cellspoints[14][0],cellspoints[14][1]);
+                break;
+            case 15:
+                drawLocation(cellspoints[15][0],cellspoints[15][1]);
+                break;
+            case 16:
+                drawLocation(cellspoints[16][0],cellspoints[16][1]);
+                break;
+
+            default:
+                break;
+        }
+    }
     // This Method draws a point on the specified cell location
     private void drawLocation(float x, float y) {
         BitmapFactory.Options myOptions = new BitmapFactory.Options();
@@ -237,6 +298,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         imageView.setScaleType(ImageView.ScaleType.FIT_XY);
         imageView.setImageBitmap(mutableBitmap);
     }
+
+
     private void clearLocationPoints()
     {
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.floor9);
@@ -260,69 +323,31 @@ public class MainActivity extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnInitial:
-                drawLocation(cellspoints[0][0],cellspoints[0][1]);
-                //drawLocation(cellspoints[1][0],cellspoints[1][1]);
-                //drawLocation(cellspoints[2][0],cellspoints[2][1]);
-                // drawLocation(cellspoints[3][0],cellspoints[3][1]);
-                //drawLocation(cellspoints[4][0],cellspoints[4][1]);
-                // drawLocation(cellspoints[5][0],cellspoints[5][1]);
-                //drawLocation(cellspoints[6][0],cellspoints[6][1]);
-                //drawLocation(cellspoints[7][0],cellspoints[7][1]);
-                // drawLocation(cellspoints[8][0],cellspoints[8][1]);
-                //drawLocation(cellspoints[9][0],cellspoints[9][1]);
-                //drawLocation(cellspoints[10][0],cellspoints[10][1]);
-                // drawLocation(cellspoints[11][0],cellspoints[11][1]);
-                //drawLocation(cellspoints[12][0],cellspoints[12][1]);
-                // drawLocation(cellspoints[13][0],cellspoints[13][1]);
-                //  drawLocation(cellspoints[14][0],cellspoints[14][1]);
-                //drawLocation(cellspoints[15][0],cellspoints[15][1]);
-                //drawLocation(cellspoints[16][0],cellspoints[16][1]);
-                //clearLocationPoints();
-                break;
+                // Initialize prior to
+                prior =  initiatePrior();
+                clearLocationPoints();
+                rfTestData.clear();
+                cellProbList.clear();
+                counter=0;
 
-            case R.id.btnsenseap:
-
-                updateProgress(100);
-                break;
-
-            case R.id.btnsensenew:
-                 clearLocationPoints();
-                // registerReceiver(myRssiChangeReceiver, intentFilter);
-               // Cell 1
-               /* RFClass rftest1 = new RFClass(-89,"00:0e:a6:27:4d:fb");
-                RFClass rftest2 = new RFClass(-60,"1c:aa:07:7b:28:06");
-                RFClass rftest3 = new RFClass(-49,"1c:aa:07:7b:28:00");
-                RFClass rftest4 = new RFClass(-76,"1c:aa:07:7b:37:d6");
-                RFClass rftest5 = new RFClass(-65,"1c:aa:07:7b:37:d4");
-                RFClass rftest6 = new RFClass(-87,"00:15:70:ad:99:ca");
-                RFClass rftest7 = new RFClass(-50,"1c:aa:07:7b:28:04");
-                RFClass rftest8 = new RFClass(-77,"1c:aa:07:7b:37:d0");
+                RFClass rftest1 = new RFClass(-89,"00:0e:a6:27:4d:fb");
+                RFClass rftest2 = new RFClass(-41,"1c:aa:07:7b:28:06");
+                RFClass rftest3 = new RFClass(-70,"1c:aa:07:7b:37:d6");
+                RFClass rftest4 = new RFClass(-69,"1c:aa:07:7b:37:d0");
+                /*RFClass rftest5 = new RFClass(-89,"00:0e:a6:27:4d:fb");
+                RFClass rftest6 = new RFClass(-93,"00:0c:f6:43:63:88");
+                RFClass rftest7 = new RFClass(-41,"1c:aa:07:7b:28:00");
+                RFClass rftest8 = new RFClass(-44,"1c:aa:07:7b:28:04");
+                RFClass rftest9 = new RFClass(-91,"98:f5:37:5b:55:36");
+                RFClass rftest10 = new RFClass(-93,"00:15:70:ad:99:c9");
+                RFClass rftest11 = new RFClass(-70,"1c:aa:07:7b:37:d3");
+                RFClass rftest12 = new RFClass(-69,"1c:aa:07:7b:37:d0");
+                RFClass rftest13 = new RFClass(-89,"00:15:70:ad:99:c8");*/
                 rfTestData.add(rftest1);
                 rfTestData.add(rftest2);
                 rfTestData.add(rftest3);
                 rfTestData.add(rftest4);
-                rfTestData.add(rftest5);
-                rfTestData.add(rftest6);
-                rfTestData.add(rftest7);
-                rfTestData.add(rftest8);*/
-                // Cell 17
-                RFClass rftest1 = new RFClass(-62,"00:1b:90:76:d3:f6");
-                RFClass rftest2 = new RFClass(-76,"5c:96:9d:65:76:8d");
-                RFClass rftest3 = new RFClass(-64,"1c:aa:07:7b:39:10");
-                RFClass rftest4 = new RFClass(-65,"1c:aa:07:7b:39:16");
-                RFClass rftest5 = new RFClass(-74,"1c:aa:07:6e:31:a6");
-                RFClass rftest6 = new RFClass(-69,"1c:aa:07:6e:31:a3");
-                RFClass rftest7 = new RFClass(-62,"00:1b:90:76:d3:f0");
-                RFClass rftest8 = new RFClass(-80,"20:c9:d0:18:43:f3");
-                RFClass rftest9 = new RFClass(-71,"5c:d9:98:e3:e6:c4");
-                RFClass rftest10 = new RFClass(-84,"00:25:9c:ca:87:ee");
-                RFClass rftest11 = new RFClass(-86,"00:26:5a:a9:99:46");
-                RFClass rftest12 = new RFClass(-62,"00:1b:90:76:d3:f0");
-                rfTestData.add(rftest1);
-                rfTestData.add(rftest2);
-                rfTestData.add(rftest3);
-                rfTestData.add(rftest4);
-                rfTestData.add(rftest5);
+              /*  rfTestData.add(rftest5);
                 rfTestData.add(rftest6);
                 rfTestData.add(rftest7);
                 rfTestData.add(rftest8);
@@ -330,70 +355,40 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 rfTestData.add(rftest10);
                 rfTestData.add(rftest11);
                 rfTestData.add(rftest12);
-                // Cell4
-               /* RFClass rftest1 = new RFClass(-52,"1c:aa:07:7b:28:06");
-                RFClass rftest2 = new RFClass(-68,"1c:aa:07:7b:37:d6");
-                RFClass rftest3 = new RFClass(-39,"1c:aa:07:7b:39:10");
-                RFClass rftest4 = new RFClass(-66,"1c:aa:07:7b:37:d4");
-                RFClass rftest5 = new RFClass(-91,"00:0e:a6:27:4d:fb");
-                RFClass rftest6 = new RFClass(-52,"1c:aa:07:7b:28:03");
-                RFClass rftest7 = new RFClass(-41,"1c:aa:07:7b:28:04");
-                RFClass rftest8 = new RFClass(-66,"1c:aa:07:7b:37:d0");
-                RFClass rftest9 = new RFClass(-85,"00:15:70:ad:99:ca");
-                RFClass rftest10 = new RFClass(-89,"00:15:70:ad:99:cb");
-                RFClass rftest11 = new RFClass(-52,"1c:aa:07:7b:28:06");
-                RFClass rftest12 = new RFClass(-68,"1c:aa:07:7b:37:d6");
-                rfTestData.add(rftest1);
-                rfTestData.add(rftest2);
-                rfTestData.add(rftest3);
-                rfTestData.add(rftest4);
-                rfTestData.add(rftest5);
-                rfTestData.add(rftest6);
-                rfTestData.add(rftest7);
-                rfTestData.add(rftest8);
-                rfTestData.add(rftest9);
-                rfTestData.add(rftest10);
-                rfTestData.add(rftest11);
-                rfTestData.add(rftest12);*/
+                rfTestData.add(rftest13);*/
 
-                // CELL 5
-               /* RFClass rftest1 = new RFClass(-43,"1c:aa:07:7b:28:06");
-                RFClass rftest2 = new RFClass(-69,"1c:aa:07:7b:37:d6");
-                RFClass rftest3 = new RFClass(-43,"1c:aa:07:7b:28:00");
-                RFClass rftest4 = new RFClass(-42,"1c:aa:07:7b:28:03");
-                RFClass rftest5 = new RFClass(-64,"1c:aa:07:7b:37:d3");
-                RFClass rftest6 = new RFClass(-42,"1c:aa:07:7b:28:04");
-                RFClass rftest7 = new RFClass(-68,"1c:aa:07:7b:37:d0");
-                RFClass rftest8 = new RFClass(-46,"1c:aa:07:7b:28:06");
-                RFClass rftest9 = new RFClass(-75,"1c:aa:07:7b:37:d6");
-                RFClass rftest10 = new RFClass(-50,"1c:aa:07:7b:28:00");
-                RFClass rftest11 = new RFClass(-48,"1c:aa:07:7b:28:04");
-                RFClass rftest12 = new RFClass(-68,"1c:aa:07:7b:37:d0");
-                rfTestData.add(rftest1);
-                rfTestData.add(rftest2);
-                rfTestData.add(rftest3);
-                rfTestData.add(rftest4);
-                rfTestData.add(rftest5);
-                rfTestData.add(rftest6);
-                rfTestData.add(rftest7);
-                rfTestData.add(rftest8);
-                rfTestData.add(rftest9);
-                rfTestData.add(rftest10);
-                rfTestData.add(rftest11);
-                rfTestData.add(rftest12);*/
-                Thread thread = new Thread()
+
+
+                break;
+
+            case R.id.btnsenseap:
+
+              // Unregister the RSSI Reciever
+              // unregisterReceiver(myRssiChangeReceiver);
+              // Sort the RFData
+                //Collections.sort(rfTestData);
+
+                 // increment Counter
+
+                  /*     Thread thread = new Thread()
                 {
                     @Override
                     public void run() {
-                        try {
-                            startBayesian();
-                        } catch (Exception e) {
+                        try {*/
+                startBayesian();
+                       /* } catch (Exception e) {
                             e.printStackTrace();
                         }
                     }
                 };
-                thread.start();
+                thread.start();*/
 
+
+                break;
+
+            case R.id.btnsensenew:
+                // clearLocationPoints();
+               // registerReceiver(myRssiChangeReceiver, intentFilter);
 
 
                 break;
@@ -420,7 +415,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
             int rssi;
             String  bssid;
             StringBuilder sb = new StringBuilder();
-            //int newRssi = arg1.getIntExtra(WifiManager.EXTRA_NEW_RSSI, 0);
             WifiManager w = (WifiManager) arg0.getSystemService(Context.WIFI_SERVICE);
 
             wifiList = w.getScanResults(); // Returns a <list> of scanResults
@@ -448,268 +442,33 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         }};
 
-
-
-
-
-    /***************************************************************************************
-     *************************************** Timer  ****************************************
-     ***************************************************************************************/
-  /*  public void startTimer(){
-        time = 0;
-        t = new Timer();
-        task = new TimerTask() {
-
-            @Override
-            public void run() {
-                runOnUiThread(new Runnable() {
-
-                    //Called each time when 1000 milliseconds (1 second) (the period parameter)
-                    @Override
-                    public void run() {
-                        TextView tv = (TextView) findViewById(R.id.timer);
-
-                        time += 1;
-
-                        int seconds = time % 60;
-                        int minutes = time / 60;
-                        String stringTime = String.format("%02d:%02d", minutes, seconds);
-                        tv.setText(stringTime);
-
-                        if(minutes >= 2){
-                            stopTime();
-                        }
-                    }
-                });
-            }
-        };
-        t.scheduleAtFixedRate(task, 0, 1000);
-        //Second param. - Set how long before to start calling the TimerTask (in milliseconds)
-        //Third param. - Set the amount of time between each execution (in milliseconds)
-    }
-
-
-    private void stopTime(){
-
-
-        System.out.println(fingerprintingData);
-        activateButtons();
-        switch (this.btnClickedIs){
-            case btn1:
-                this.dataC1 = new ArrayList<RFData>(this.fingerprintingData);
-                this.fingerprintingData = new ArrayList<RFData>();
-                break;
-            case btn2:
-                this.dataC2 = new ArrayList<RFData>(this.fingerprintingData);
-                this.fingerprintingData = new ArrayList<RFData>();
-                break;
-            case btn3:
-                this.dataC3 = new ArrayList<RFData>(this.fingerprintingData);
-                this.fingerprintingData = new ArrayList<RFData>();
-                break;
-            case btn4:
-                this.dataC4 = new ArrayList<RFData>(this.fingerprintingData);
-                this.fingerprintingData = new ArrayList<RFData>();
-                break;
-            case btn5:
-                this.dataC5 = new ArrayList<RFData>(this.fingerprintingData);
-                this.fingerprintingData = new ArrayList<RFData>();
-                break;
-            case btn6:
-                this.dataC6 = new ArrayList<RFData>(this.fingerprintingData);
-                this.fingerprintingData = new ArrayList<RFData>();
-                break;
-            case btn7:
-                this.dataC7 = new ArrayList<RFData>(this.fingerprintingData);
-                this.fingerprintingData = new ArrayList<RFData>();
-                break;
-            case btn8:
-                this.dataC8 = new ArrayList<RFData>(this.fingerprintingData);
-                this.fingerprintingData = new ArrayList<RFData>();
-                break;
-            case btn9:
-                this.dataC9 = new ArrayList<RFData>(this.fingerprintingData);
-                this.fingerprintingData = new ArrayList<RFData>();
-                break;
-            case btn10:
-                this.dataC10 = new ArrayList<RFData>(this.fingerprintingData);
-                this.fingerprintingData = new ArrayList<RFData>();
-                break;
-            case btn11:
-                this.dataC11 = new ArrayList<RFData>(this.fingerprintingData);
-                this.fingerprintingData = new ArrayList<RFData>();
-                break;
-            case btn12:
-                this.dataC12 = new ArrayList<RFData>(this.fingerprintingData);
-                this.fingerprintingData = new ArrayList<RFData>();
-                break;
-            case btn13:
-                this.dataC13 = new ArrayList<RFData>(this.fingerprintingData);
-                this.fingerprintingData = new ArrayList<RFData>();
-                break;
-            case btn14:
-                this.dataC14 = new ArrayList<RFData>(this.fingerprintingData);
-                this.fingerprintingData = new ArrayList<RFData>();
-                break;
-            case btn15:
-                this.dataC15 = new ArrayList<RFData>(this.fingerprintingData);
-                this.fingerprintingData = new ArrayList<RFData>();
-                break;
-            case btn16:
-                this.dataC16 = new ArrayList<RFData>(this.fingerprintingData);
-                this.fingerprintingData = new ArrayList<RFData>();
-                break;
-            case btn17:
-                this.dataC17 = new ArrayList<RFData>(this.fingerprintingData);
-                this.fingerprintingData = new ArrayList<RFData>();
-                break;
-        }
-        task.cancel();
-    }
-*/
-
-
-
-
-
-
-
-    /***************************************************************************************
-     ************************* Buttons - Enable and Disable options*************************
-     ***************************************************************************************/
-
-   /* private void disableButtons(){
-        this.btnCollect1.setEnabled(false);
-        this.btnCollect2.setEnabled(false);
-        this.btnCollect3.setEnabled(false);
-        this.btnCollect4.setEnabled(false);
-        this.btnCollect5.setEnabled(false);
-        this.btnCollect6.setEnabled(false);
-        this.btnCollect7.setEnabled(false);
-        this.btnCollect8.setEnabled(false);
-        this.btnCollect9.setEnabled(false);
-        this.btnCollect10.setEnabled(false);
-        this.btnCollect11.setEnabled(false);
-        this.btnCollect12.setEnabled(false);
-        this.btnCollect13.setEnabled(false);
-        this.btnCollect14.setEnabled(false);
-        this.btnCollect15.setEnabled(false);
-        this.btnCollect16.setEnabled(false);
-        this.btnCollect17.setEnabled(false);
-    }
-
-    private void activateButtons(){
-        if(!btn1Used)this.btnCollect1.setEnabled(true);
-        if(!btn2Used)this.btnCollect2.setEnabled(true);
-        if(!btn3Used)this.btnCollect3.setEnabled(true);
-        if(!btn4Used)this.btnCollect4.setEnabled(true);
-        if(!btn5Used)this.btnCollect5.setEnabled(true);
-        if(!btn6Used)this.btnCollect6.setEnabled(true);
-        if(!btn7Used)this.btnCollect7.setEnabled(true);
-        if(!btn8Used)this.btnCollect8.setEnabled(true);
-        if(!btn9Used)this.btnCollect9.setEnabled(true);
-        if(!btn10Used)this.btnCollect10.setEnabled(true);
-        if(!btn11Used)this.btnCollect11.setEnabled(true);
-        if(!btn12Used)this.btnCollect12.setEnabled(true);
-        if(!btn13Used)this.btnCollect13.setEnabled(true);
-        if(!btn14Used)this.btnCollect14.setEnabled(true);
-        if(!btn15Used)this.btnCollect15.setEnabled(true);
-        if(!btn16Used)this.btnCollect16.setEnabled(true);
-        if(!btn17Used)this.btnCollect17.setEnabled(true);
-    }
-
-    private void initializeBoolValues(){
-        this.btn1Used = false;
-        this.btn2Used = false;
-        this.btn3Used = false;
-        this.btn4Used = false;
-        this.btn5Used = false;
-        this.btn6Used = false;
-        this.btn7Used = false;
-        this.btn8Used = false;
-        this.btn9Used = false;
-        this.btn10Used = false;
-        this.btn11Used = false;
-        this.btn12Used = false;
-        this.btn13Used = false;
-        this.btn14Used = false;
-        this.btn15Used = false;
-        this.btn16Used = false;
-        this.btn17Used = false;
-    }
-    void saveData()
-    {
-
-        ArrayList<ArrayList<RFData>> tempArrayList = new ArrayList<ArrayList<RFData>>();
-        tempArrayList.add(0,dataC1);
-        tempArrayList.add(1,dataC2);
-        tempArrayList.add(2,dataC3);
-        tempArrayList.add(3,dataC4);
-        tempArrayList.add(4,dataC5);
-        tempArrayList.add(5,dataC6);
-        tempArrayList.add(6,dataC7);
-        tempArrayList.add(7,dataC8);
-        tempArrayList.add(8,dataC9);
-        tempArrayList.add(9,dataC10);
-        tempArrayList.add(10,dataC11);
-        tempArrayList.add(11,dataC12);
-        tempArrayList.add(12,dataC13);
-        tempArrayList.add(13,dataC14);
-        tempArrayList.add(14,dataC15);
-        tempArrayList.add(15,dataC16);
-        tempArrayList.add(16,dataC17);
-
-
-        try {
-
-
-            String fullPath = Environment.getExternalStorageDirectory().getAbsolutePath();
-            FileOutputStream outStream = new FileOutputStream(fullPath +"/rfdata.txt");
-            ObjectOutputStream objectOutStream = new ObjectOutputStream(outStream);
-            objectOutStream.writeInt(tempArrayList.size()); // Save size first
-
-
-            for(int i=0; i<tempArrayList.size(); i++)
-            {
-                objectOutStream.writeBytes(" Cell Nr " + (i) + "\n");
-                ArrayList<RFData> rfDataList = tempArrayList.get(i);
-                for(int j=0; j<rfDataList.size(); j++)
-                {
-                    objectOutStream.writeBytes(rfDataList.get(j).toString() + "\n");
-                }
-            }
-            objectOutStream.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-*/
-
-
-
-
-
     /***********************************************************************************
      ****************************    BAYESIAN ALGORITHM     ****************************
      **********************************************************************************/
 
     public void startBayesian(){
-        for(int i = 0; i < rfTestData.size(); i++){
-            RFClass testPoint1 = rfTestData.get(i);
-            float [] tempProb = getProb(testPoint1.getId(), testPoint1.getRss());
+        if(counter < rfTestData.size()) {
+            RFClass testPoint1 = rfTestData.get(counter);
+            float[] tempProb = getProb(testPoint1.getId(), testPoint1.getRss());
             posterior = multProbAndPriorAndNormalize(tempProb, prior);
             //Update prior
             prior = posterior;
+
+
+            counter++;
         }
+        else {
+            Toast.makeText(getApplicationContext(),"Collect a new List.", Toast.LENGTH_LONG).show();
+        }
+
     }
 
 
     private static float getProbFromCell(Map<String, HashMap<Integer, Float>> cell, String id, int rss){
         if(cell.containsKey(id)){
             if(cell.get(id).containsKey(rss)){
+                return cell.get(id).get(rss);
 
-                float p = cell.get(id).get(rss);
-                return p;
             }
         }
         return 0;
@@ -723,9 +482,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
         return prior;
     }
 
-    private static float[] multProbAndPriorAndNormalize (float[] prob, float[] prior){
+    private float[] multProbAndPriorAndNormalize (float[] prob, float[] prior){
         float [] results = new float [NR_CELLS];
         float count = 0;
+
         for(int i=0; i<prob.length; i++)
         {
             results[i] = prob[i]*prior[i];
@@ -734,9 +494,20 @@ public class MainActivity extends Activity implements View.OnClickListener {
             System.out.println(i + ". Prob: "+ prob[i] + "  Prior: "+ prior[i] + "  Result: "+ results[i]  + "     Count: " + count);
         }
         System.out.println("\n\n");
+        cellProbList = new ArrayList<CellProb>();
         for(int i = 0; i <results.length; i++){
             if(count!= 0)results[i] = results[i]/count;
             System.out.println("Result normalized: "+ results[i]);
+
+            CellProb cTemp = new CellProb(i, results[i]);
+            cellProbList.add(cTemp);
+
+
+        }
+        Collections.sort(cellProbList);
+        setLocation();
+        for(int i=0; i<cellProbList.size(); i++) {
+            System.out.println("After Sort: " + cellProbList.get(i));
         }
 
         return results;
@@ -753,7 +524,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         float [] probColumn = new float[NR_CELLS];
         probColumn[0] = getProbFromCell(cell1, id, rss);
         probColumn[1] = getProbFromCell(cell2, id, rss);
-        probColumn[2] = getProbFromCell(cell3, id, rss);
+       /* probColumn[2] = getProbFromCell(cell3, id, rss);
         probColumn[3] = getProbFromCell(cell4, id, rss);
         probColumn[4] = getProbFromCell(cell5, id, rss);
         probColumn[5] = getProbFromCell(cell6, id, rss);
@@ -767,7 +538,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         probColumn[13] = getProbFromCell(cell14, id, rss);
         probColumn[14] = getProbFromCell(cell15, id, rss);
         probColumn[15] = getProbFromCell(cell16, id, rss);
-        probColumn[16] = getProbFromCell(cell17, id, rss);
+        probColumn[16] = getProbFromCell(cell17, id, rss);*/
         return probColumn;
     }
 

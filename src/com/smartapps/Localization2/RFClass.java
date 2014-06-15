@@ -1,8 +1,5 @@
 package com.smartapps.Localization2;
 
-/**
- * Created by Maryanne on 03-06-2014.
- */
 public class RFClass {
 
 

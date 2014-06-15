@@ -6,9 +6,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.widget.Toast;
 
-/**
- * Created by Maryanne on 03-06-2014.
- */
+
 public class GCMIntentService{
  //extends GCMBaseIntentService{
 

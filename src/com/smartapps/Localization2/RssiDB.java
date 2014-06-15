@@ -13,31 +13,12 @@ import android.util.Log;
  */
 public class RssiDB extends SQLiteOpenHelper {
 
-    private static final int DATABASE_VERSION = 2; //update when changing
+    private static final int DATABASE_VERSION = 3; //update when changing
 
     public static final String COLUMN_ID="_id";
     private static final String DATABASE_NAME = "rssivalues.db";
 
-    //Table names
-    /*
-    public static final String TABLE_C1_TEST = "Cell1";
-    public static final String TABLE_C2_TEST = "Cell2";
-    public static final String TABLE_C3_TEST = "Cell3";
-    public static final String TABLE_C4_TEST = "Cell4";
-    public static final String TABLE_C5_TEST = "Cell5";
-    public static final String TABLE_C6_TEST = "Cell6";
-    public static final String TABLE_C7_TEST = "Cell7";
-    public static final String TABLE_C8_TEST = "Cell8";
-    public static final String TABLE_C9_TEST = "Cell9";
-    public static final String TABLE_C10_TEST = "Cell10";
-    public static final String TABLE_C11_TEST = "Cell11";
-    public static final String TABLE_C12_TEST = "Cell12";
-    public static final String TABLE_C13_TEST = "Cell13";
-    public static final String TABLE_C14_TEST = "Cell14";
-    public static final String TABLE_C15_TEST = "Cell15";
-    public static final String TABLE_C16_TEST = "Cell16";
-    public static final String TABLE_C17_TEST = "Cell17";
-*/
+
     public static final String TABLE_MAC_VALUES = "MACV";
 
 
@@ -74,147 +55,6 @@ public class RssiDB extends SQLiteOpenHelper {
                     SSID_VALUE + " text not null);";
 
 
-    /*************************************************************************
-     *****************************    TESTING   ******************************
-     *************************************************************************/
-/*
-    private static final String C1_CREATE_TEST =
-            "create table "+ TABLE_C1_TEST + "(" +
-                    COLUMN_ID + " integer primary key autoincrement, " +
-                    SSID_VALUE + " text not null, "+
-                    RSSI_VALUE + " integer not null, " +
-                    PROBABILITY + " real not null );";
-                    //"foreign key ("+SSID_VALUE+") references "+TABLE_MAC_VALUES+"("+SSID_VALUE+"));";
-
-
-    private static final String C2_CREATE_TEST =
-            "create table "+ TABLE_C2_TEST + "(" +
-                    COLUMN_ID + " integer primary key autoincrement, " +
-                    SSID_VALUE + " text not null, "+
-                    RSSI_VALUE + " integer not null, " +
-                    PROBABILITY + " real not null );";
-    //"foreign key ("+SSID_VALUE+") references "+TABLE_MAC_VALUES+"("+SSID_VALUE+"));";
-
-    private static final String C3_CREATE_TEST =
-            "create table "+ TABLE_C3_TEST + "(" +
-                    COLUMN_ID + " integer primary key autoincrement, " +
-                    SSID_VALUE + " text not null, "+
-                    RSSI_VALUE + " integer not null, " +
-                    PROBABILITY + " real not null );";
-    //"foreign key ("+SSID_VALUE+") references "+TABLE_MAC_VALUES+"("+SSID_VALUE+"));";
-
-    private static final String C4_CREATE_TEST =
-            "create table "+ TABLE_C4_TEST + "(" +
-                    COLUMN_ID + " integer primary key autoincrement, " +
-                    SSID_VALUE + " text not null, "+
-                    RSSI_VALUE + " integer not null, " +
-                    PROBABILITY + " real not null );";
-    //"foreign key ("+SSID_VALUE+") references "+TABLE_MAC_VALUES+"("+SSID_VALUE+"));";
-
-    private static final String C5_CREATE_TEST =
-            "create table "+ TABLE_C5_TEST + "(" +
-                    COLUMN_ID + " integer primary key autoincrement, " +
-                    SSID_VALUE + " text not null, "+
-                    RSSI_VALUE + " integer not null, " +
-                    PROBABILITY + " real not null );";
-    //"foreign key ("+SSID_VALUE+") references "+TABLE_MAC_VALUES+"("+SSID_VALUE+"));";
-
-    private static final String C6_CREATE_TEST =
-            "create table "+ TABLE_C6_TEST + "(" +
-                    COLUMN_ID + " integer primary key autoincrement, " +
-                    SSID_VALUE + " text not null, "+
-                    RSSI_VALUE + " integer not null, " +
-                    PROBABILITY + " real not null );";
-    //"foreign key ("+SSID_VALUE+") references "+TABLE_MAC_VALUES+"("+SSID_VALUE+"));";
-
-    private static final String C7_CREATE_TEST =
-            "create table "+ TABLE_C7_TEST + "(" +
-                    COLUMN_ID + " integer primary key autoincrement, " +
-                    SSID_VALUE + " text not null, "+
-                    RSSI_VALUE + " integer not null, " +
-                    PROBABILITY + " real not null );";
-    //"foreign key ("+SSID_VALUE+") references "+TABLE_MAC_VALUES+"("+SSID_VALUE+"));";
-
-    private static final String C8_CREATE_TEST =
-            "create table "+ TABLE_C8_TEST + "(" +
-                    COLUMN_ID + " integer primary key autoincrement, " +
-                    SSID_VALUE + " text not null, "+
-                    RSSI_VALUE + " integer not null, " +
-                    PROBABILITY + " real not null );";
-                    //"foreign key ("+SSID_VALUE+") references "+TABLE_MAC_VALUES+"("+SSID_VALUE+"));";
-
-    private static final String C9_CREATE_TEST =
-            "create table "+ TABLE_C9_TEST + "(" +
-                    COLUMN_ID + " integer primary key autoincrement, " +
-                    SSID_VALUE + " text not null, "+
-                    RSSI_VALUE + " integer not null, " +
-                    PROBABILITY + " real not null );";
-                    //"foreign key ("+SSID_VALUE+") references "+TABLE_MAC_VALUES+"("+SSID_VALUE+"));";
-
-    private static final String C10_CREATE_TEST =
-            "create table "+ TABLE_C10_TEST + "(" +
-                    COLUMN_ID + " integer primary key autoincrement, " +
-                    SSID_VALUE + " text not null, "+
-                    RSSI_VALUE + " integer not null, " +
-                    PROBABILITY + " real not null );";
-                    //"foreign key ("+SSID_VALUE+") references "+TABLE_MAC_VALUES+"("+SSID_VALUE+"));";
-
-    private static final String C11_CREATE_TEST =
-            "create table "+ TABLE_C11_TEST + "(" +
-                    COLUMN_ID + " integer primary key autoincrement, " +
-                    SSID_VALUE + " text not null, "+
-                    RSSI_VALUE + " integer not null, " +
-                    PROBABILITY + " real not null );";
-                    //"foreign key ("+SSID_VALUE+") references "+TABLE_MAC_VALUES+"("+SSID_VALUE+"));";
-
-    private static final String C12_CREATE_TEST =
-            "create table "+ TABLE_C12_TEST + "(" +
-                    COLUMN_ID + " integer primary key autoincrement, " +
-                    SSID_VALUE + " text not null, "+
-                    RSSI_VALUE + " integer not null, " +
-                    PROBABILITY + " real not null );";
-    //"foreign key ("+SSID_VALUE+") references "+TABLE_MAC_VALUES+"("+SSID_VALUE+"));";
-
-    private static final String C13_CREATE_TEST =
-            "create table "+ TABLE_C13_TEST + "(" +
-                    COLUMN_ID + " integer primary key autoincrement, " +
-                    SSID_VALUE + " text not null, "+
-                    RSSI_VALUE + " integer not null, " +
-                    PROBABILITY + " real not null );";
-                    //"foreign key ("+SSID_VALUE+") references "+TABLE_MAC_VALUES+"("+SSID_VALUE+"));";
-
-    private static final String C14_CREATE_TEST =
-            "create table "+ TABLE_C14_TEST + "(" +
-                    COLUMN_ID + " integer primary key autoincrement, " +
-                    SSID_VALUE + " text not null, "+
-                    RSSI_VALUE + " integer not null, " +
-                    PROBABILITY + " real not null );";
-                    //"foreign key ("+SSID_VALUE+") references "+TABLE_MAC_VALUES+"("+SSID_VALUE+"));";
-
-    private static final String C15_CREATE_TEST =
-            "create table "+ TABLE_C15_TEST + "(" +
-                    COLUMN_ID + " integer primary key autoincrement, " +
-                    SSID_VALUE + " text not null, "+
-                    RSSI_VALUE + " integer not null, " +
-                    PROBABILITY + " real not null );";
-                    //"foreign key ("+SSID_VALUE+") references "+TABLE_MAC_VALUES+"("+SSID_VALUE+"));";
-
-    private static final String C16_CREATE_TEST =
-            "create table "+ TABLE_C16_TEST + "(" +
-                    COLUMN_ID + " integer primary key autoincrement, " +
-                    SSID_VALUE + " text not null, "+
-                    RSSI_VALUE + " integer not null, " +
-                    PROBABILITY + " real not null );";
-                    //"foreign key ("+SSID_VALUE+") references "+TABLE_MAC_VALUES+"("+SSID_VALUE+"));";
-
-    private static final String C17_CREATE_TEST =
-            "create table "+ TABLE_C17_TEST + "(" +
-                    COLUMN_ID + " integer primary key autoincrement, " +
-                    SSID_VALUE + " text not null, "+
-                    RSSI_VALUE + " integer not null, " +
-                    PROBABILITY + " real not null );";
-                    //"foreign key ("+SSID_VALUE+") references "+TABLE_MAC_VALUES+"("+SSID_VALUE+"));";
-*/
 
     /*************************************************************************
      ****************************     TRAINING   *****************************
@@ -376,29 +216,11 @@ public class RssiDB extends SQLiteOpenHelper {
     */
     public void onCreate(SQLiteDatabase database) {
 //
-//        database.execSQL(C1_CREATE_TEST);
-//        database.execSQL(C2_CREATE_TEST);
-//        database.execSQL(C3_CREATE_TEST);
-//        database.execSQL(C4_CREATE_TEST);
-//        database.execSQL(C5_CREATE_TEST);
-//        database.execSQL(C6_CREATE_TEST);
-//        database.execSQL(C7_CREATE_TEST);
-//        database.execSQL(C8_CREATE_TEST);
-//        database.execSQL(C9_CREATE_TEST);
-//        database.execSQL(C10_CREATE_TEST);
-//        database.execSQL(C11_CREATE_TEST);
-//        database.execSQL(C12_CREATE_TEST);
-//        database.execSQL(C13_CREATE_TEST);
-//        database.execSQL(C14_CREATE_TEST);
-//        database.execSQL(C15_CREATE_TEST);
-//        database.execSQL(C16_CREATE_TEST);
-//        database.execSQL(C17_CREATE_TEST);
-
         database.execSQL(CREATE_ALL_MAC_VALUES);
 
         database.execSQL(C1_CREATE_TRAINING);
         database.execSQL(C2_CREATE_TRAINING);
-        database.execSQL(C3_CREATE_TRAINING);
+       /* database.execSQL(C3_CREATE_TRAINING);
         database.execSQL(C4_CREATE_TRAINING);
         database.execSQL(C5_CREATE_TRAINING);
         database.execSQL(C6_CREATE_TRAINING);
@@ -412,12 +234,12 @@ public class RssiDB extends SQLiteOpenHelper {
         database.execSQL(C14_CREATE_TRAINING);
         database.execSQL(C15_CREATE_TRAINING);
         database.execSQL(C16_CREATE_TRAINING);
-        database.execSQL(C17_CREATE_TRAINING);
+        database.execSQL(C17_CREATE_TRAINING);*/
 
         insertDataMacIDS(database);
         insertDataC1(database);
         insertDataC2(database);
-        insertDataC3(database);
+       /* insertDataC3(database);
         insertDataC4(database);
         insertDataC5(database);
         insertDataC6(database);
@@ -431,7 +253,7 @@ public class RssiDB extends SQLiteOpenHelper {
         insertDataC14(database);
         insertDataC15(database);
         insertDataC16(database);
-        insertDataC17(database);
+        insertDataC17(database);*/
 
     }
 
@@ -739,7 +561,7 @@ public class RssiDB extends SQLiteOpenHelper {
         db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
         values = new ContentValues();
 
-        values.put(RssiDB.SSID_VALUE,  "1c:aa:07:7b:28:06");
+        values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:28:06");
         values.put(RssiDB.RSSI_VALUE,  "-60");
         values.put(RssiDB.PROBABILITY, "3.64717820586184E-22");
         db.insert(RssiDB.TABLE_C2_TRAINING, null, values);
@@ -42561,32 +42383,6 @@ public class RssiDB extends SQLiteOpenHelper {
 
         ContentValues values = new ContentValues();
 
-        /*
-                -40	 1c:aa:07:7b:28:06
-                -67	 1c:aa:07:7b:37:d6
-                -42	 1c:aa:07:7b:28:04
-                -79	 00:1b:90:76:ce:14
-                -79	 00:1b:90:76:ce:14
-                -79	 00:1b:90:76:ce:14
-
-        values.put(RssiDB.RSSI_VALUE, "-67");
-        values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:37:d6");
-        values.put(RssiDB.PROBABILITY, "1");
-        db.insert(RssiDB.TABLE_C1_TEST, null, values);
-        values = new ContentValues();
-
-        values.put(RssiDB.RSSI_VALUE, "-42");
-        values.put(RssiDB.SSID_VALUE, "1c:aa:07:7b:28:04");
-        values.put(RssiDB.PROBABILITY, "1");
-        db.insert(RssiDB.TABLE_C1_TEST, null, values);
-        values = new ContentValues();
-
-        values.put(RssiDB.RSSI_VALUE, "-83");
-        values.put(RssiDB.SSID_VALUE, "00:0e:a6:27:4d:fb");
-        values.put(RssiDB.PROBABILITY, "1");
-        db.insert(RssiDB.TABLE_C1_TEST, null, values);
-        values = new ContentValues();
-        */
 
 
         /******************************************************************************/
@@ -42701,9 +42497,9 @@ public class RssiDB extends SQLiteOpenHelper {
         db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
         values = new ContentValues();
 
-       /* values.put(RssiDB.SSID_VALUE, "00:1b:90:76:ce:10");
+        values.put(RssiDB.SSID_VALUE, "00:1b:90:76:ce:10");
         db.insert(RssiDB.TABLE_MAC_VALUES, null, values);
-        values = new ContentValues();*/
+        values = new ContentValues();
 
 
     }
