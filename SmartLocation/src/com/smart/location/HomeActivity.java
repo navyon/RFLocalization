@@ -100,6 +100,7 @@ public class HomeActivity extends Activity implements OnClickListener,
 		setContentView(R.layout.homeactivity_layout);
 		mContext = this;
 		sharedPref=new SharedPrefSettingsUtil();
+
 		initViews();
 
         //Initializations (data and bayesian algorithm's variables)
@@ -285,9 +286,13 @@ public class HomeActivity extends Activity implements OnClickListener,
 		String userName=sharedPref.getSharedPrefValue(mContext, "username");
 		//int cellNumber=Utilities.getCellNumber(mContext);
         int cellNumber =0;
-        if(cellProbList.get(0)!=null) {
-            cellNumber  = cellProbList.get(0).getId();
+        if(cellProbList.size()>0) {
+            CellProb cp = cellProbList.get(0);
+            if (cp != null) {
+                cellNumber = cp.getId();
+            }
         }
+
 		List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
 		nameValuePairs.add(new BasicNameValuePair("message", "Hello. "
 				+ userName + " is in Cell number: " + cellNumber));
