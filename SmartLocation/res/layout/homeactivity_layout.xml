@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+        >
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Localization"
+            android:id="@+id/textView"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Initial Belief"
+            android:id="@+id/btnInitial"
+            android:layout_above="@+id/btnsenseap" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sense New AP"
+            android:id="@+id/btnsenseap" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sense New Scan"
+            android:id="@+id/btnsensenew" android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" android:layout_toRightOf="@+id/btnsenseap"
+            android:layout_alignTop="@+id/btnsenseap"/>
+
+    <Button
+            android:id="@+id/notifyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_2_selector"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/strNotify"
+            android:textColor="@color/black" android:layout_above="@+id/btnsenseap"
+            android:layout_toRightOf="@+id/btnsenseap"/>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/floor9"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_alignRight="@+id/btnsensenew"
+            android:layout_alignEnd="@+id/btnsensenew"
+            android:layout_above="@+id/btnInitial" android:layout_below="@+id/textView"/>
+</RelativeLayout>
+
+
+

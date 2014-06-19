@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SmartLocation</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <!-- GCM Strings -->
+    <string name="gcm_registered">Device Registered</string>
+    <string name="gcmMessageReceived">GCM Message Received</string>
+    <string name="ok">OK</string>
+    <string name="already_registered">Already Registered Device</string>
+    <string name="error_config">Error Configuration</string>
+    
+    <!--  App Strings -->
+  <string name="strSignupTtl"><u>User Signup</u></string>
+  <string name="strUserName">User Name</string>
+  <string name="strPassword">Password</string>
+  <string name="strSignup">Signup</string>
+  <string name="strLoginTtl">User Login</string>
+  <string name="strLogin">Login</string>
+  <string name="strWelcome">Welcome to Smart Location App</string>
+  <string name="strNotify">Notify Location</string>
+</resources>

@@ -1,0 +1,55 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="edit_text_hint">#ffff</color>
+    <color name="dark_grey">#1e1e1e</color>
+    <color name="home_control_text_normal">#A1A1A1</color>
+    <color name="pickup_button_normal">#929292</color>
+    <color name="pickup_button_selected">#FFFFFF</color>
+    <color name="take_order_hint">#5074E4</color>
+    <color name="take_order_btn">#474747</color>
+    <color name="cart_blue">#30A1FD</color>
+    <color name="list_selected">#1A94EB</color>
+    <color name="dark_blue">#263A75</color>
+    <color name="brown">#6B3103</color>
+    <color name="transparent_blue">#80010A44</color>
+    <color name="transparent_dark_blue">#90082050</color>
+    <color name="cart_blue1">#0076D0</color>
+    <color name="cart_grey">#474646</color>
+    <color name="sep_grey">#505C72</color>
+    <color name="cart_dark_blue">#010A44</color>
+    <color name="transparent">#0000</color>
+    <color name="white_grey">#EDEDED</color>
+    <color name="history_list_bg">#DFDFDF</color>
+    <color name="history_list_sep">#3C3C3C</color>
+    <color name="white">#ffffff</color>
+    <color name="darkblue">#0c5fa1</color>
+    <color name="orange">#f07f12</color>
+    <color name="black">#000000</color>
+    <color name="blue">#049DE3</color>
+    <color name="light_blue">#6699ff</color>
+    <color name="grey">#adadad</color>
+    <color name="light_grey2">#aaaaaa</color>
+    <color name="light_grey">#cccccc</color>
+    <color name="link">#c8c3ae</color>
+    <color name="tab_unselected">#969077</color>
+    <color name="tab_selected1">#7c775e</color>
+    <color name="tab_selected2">#5f584b</color>
+    <color name="blue1">#adf1f9</color>
+    <color name="red">#dd3406</color>
+    <color name="dark_greybtn">#4d4d4d</color>
+
+    <!-- Section/DiningRoom -->
+
+    <color name="maroon">#8F1C17</color>
+
+    <!-- Delivery Driver Module -->
+    <color name="black_DDdetail">#474646</color>
+
+    <!-- Customer List View -->
+    <color name="customer_search_background">#0183ED</color>
+    <color name="customer_search_inner_background">#52BFFA</color>
+    <color name="customer_list_view_container_background_color">#51C0FA</color>
+    <color name="customer_list_view_container_header_color">#FEFEFE</color>
+
+</resources>

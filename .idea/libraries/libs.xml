@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/SmartLocation/libs/httpmime-4.1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SmartLocation/libs/android-support-v4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SmartLocation/libs/gcm.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

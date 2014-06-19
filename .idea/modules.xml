@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RFLocalization.iml" filepath="$PROJECT_DIR$/RFLocalization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SmartLocation/SmartLocation.iml" filepath="$PROJECT_DIR$/SmartLocation/SmartLocation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/googleplayservice/googleplayservice.iml" filepath="$PROJECT_DIR$/googleplayservice/googleplayservice.iml" />
     </modules>
   </component>
 </project>
